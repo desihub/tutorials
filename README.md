@@ -11,9 +11,9 @@ repositories.  Tutorials in this repository are generally for:
 # Menu of tutorials
 
 Tutorials in this repository include
-* Intro_to_DESI_spectra.ipynb: how to find and read DESI spectra
-* simulating-desi-spectra.ipynb: how to simulate your own spectra
-* dc17a-truth.ipynb : connecting dc17a spectra and redshift catalog entries
+* [Intro_to_DESI_spectra.ipynb](Intro_to_DESI_spectra.ipynb): how to find and read DESI spectra
+* [simulating-desi-spectra.ipynb](simulating-desi-spectra.ipynb): how to simulate your own spectra
+* [dc17a-truth.ipynb](dc17a-truth.ipynb) : connecting dc17a spectra and redshift catalog entries
     back to their input truth.
 
 # For authors of tutorials
