@@ -15,11 +15,13 @@ Tutorials in this repository include
 * [simulating-desi-spectra.ipynb](simulating-desi-spectra.ipynb): how to simulate your own spectra
 * [dc17a-truth.ipynb](dc17a-truth.ipynb) : connecting dc17a spectra and redshift catalog entries
     back to their input truth.
-* [RedrockOutputs.ipynb](RedrockOutputs.ipynb) : Understanding redrock outputs and
+* [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb) : Understanding redrock outputs and
     connecting the coefficients to template spectra.
+* [RedrockPlotSpec.md](RedrockPlotSpec.md) : How to plot redrock outputs
+    (spectra, template fits, chi2 vs. z)
 
 # For authors of tutorials
 
-Include at the beginning of the tutorial what is needed as a prerequsite for running the tutorial,
+Include at the beginning of the tutorial what is needed as a prerequisite for running the tutorial,
 e.g. specific codes, environment variables, datasets.  It's OK to link elsewhere for detailed
 instructions (e.g. for how to install DESI code in general).
