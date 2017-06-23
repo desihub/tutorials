@@ -1,8 +1,8 @@
 # Redrock plotspec
 
-This page documents the `redrock.PlotSpec` viewer.
+This page documents how to run the `redrock.PlotSpec` viewer to get plots like:
 
-**TODO**: add screenshot
+![redrock.PlotSpec screenshot](rrplotspec.png)
 
 ## Installation
 
@@ -35,7 +35,8 @@ Available from NERSC at
 
 ## Running plotspec
 
-From an ipython session `ipython --pylab`:
+Go to the top level directory where you have those files then start
+an ipython session with `ipython --pylab`:
 ```
 #- import required packages
 import numpy as np
