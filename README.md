@@ -23,10 +23,10 @@ Tutorials in this repository include
 # Other tutorials
 
 Tutorials hosted in other packages include:
-* [https://github.com/desihub/surveysim/blob/master/doc/tutorial.md](How to run survey simulations).
-* [https://github.com/desihub/specsim/blob/master/docs/nb/SimulationExamples.ipynb](How to convert an SED into a simulated DESI spectrum)
-* [https://desi.lbl.gov/DocDB/cgi-bin/private/ShowDocument?docid=2742](How to run fiber assignment)
-* [https://github.com/desihub/quicksurvey_example](How to run quicksurvey catalog-level simulations)
+* [How to run survey simulations](https://github.com/desihub/surveysim/blob/master/doc/tutorial.md).
+* [How to convert an SED into a simulated DESI spectrum](https://github.com/desihub/specsim/blob/master/docs/nb/SimulationExamples.ipynb)
+* [How to run fiber assignment](https://desi.lbl.gov/DocDB/cgi-bin/private/ShowDocument?docid=2742)
+* [How to run quicksurvey catalog-level simulations](https://github.com/desihub/quicksurvey_example)
 
 # For authors of tutorials
 
