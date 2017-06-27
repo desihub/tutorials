@@ -20,6 +20,12 @@ Tutorials in this repository include
 * [RedrockPlotSpec.md](RedrockPlotSpec.md) : How to plot redrock outputs
     (spectra, template fits, chi2 vs. z)
 
+# Other tutorials
+
+Tutorials hosted in other packages include:
+* [https://github.com/desihub/surveysim/blob/master/doc/tutorial.md](How to run survey simulations).
+* [https://github.com/desihub/specsim/blob/master/docs/nb/SimulationExamples.ipynb](How to convert an SED into a simulated DESI spectrum)
+
 # For authors of tutorials
 
 Include at the beginning of the tutorial what is needed as a prerequisite for running the tutorial,
