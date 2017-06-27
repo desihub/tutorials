@@ -17,7 +17,7 @@ Tutorials in this repository include
     back to their input truth.
 * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb) : Understanding redrock outputs and
     connecting the coefficients to template spectra.
-* [RedrockPlotSpec.md](RedrockPlotSpec.md) : How to plot redrock outputs
+* [RedrockPlotSpec.md](redrock/RedrockPlotSpec.md) : How to plot redrock outputs
     (spectra, template fits, chi2 vs. z)
 
 # Other tutorials
@@ -25,6 +25,8 @@ Tutorials in this repository include
 Tutorials hosted in other packages include:
 * [https://github.com/desihub/surveysim/blob/master/doc/tutorial.md](How to run survey simulations).
 * [https://github.com/desihub/specsim/blob/master/docs/nb/SimulationExamples.ipynb](How to convert an SED into a simulated DESI spectrum)
+* [https://desi.lbl.gov/DocDB/cgi-bin/private/ShowDocument?docid=2742](How to run fiber assignment)
+* [https://github.com/desihub/quicksurvey_example](How to run quicksurvey catalog-level simulations)
 
 # For authors of tutorials
 
