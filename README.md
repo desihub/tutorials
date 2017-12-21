@@ -11,6 +11,7 @@ repositories.  Tutorials in this repository are generally for:
 # Menu of tutorials
 
 Tutorials in this repository include
+* [Introduction to Survey simulations](survey-simulations.ipynb): how to use "survey simulation" outputs
 * [Intro_to_DESI_spectra.ipynb](Intro_to_DESI_spectra.ipynb): how to find and read DESI spectra
 * [simulating-desi-spectra.ipynb](simulating-desi-spectra.ipynb): how to simulate your own spectra
 * [dc17a-truth.ipynb](dc17a-truth.ipynb) : connecting dc17a spectra and redshift catalog entries
