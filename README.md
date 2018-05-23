@@ -38,6 +38,8 @@ Tutorials in this repository include
 * [simulating-desi-spectra.ipynb](simulating-desi-spectra.ipynb): how to simulate your own spectra
 * [dc17a-truth.ipynb](dc17a-truth.ipynb): connecting dc17a spectra and redshift catalog entries
     back to their input truth.
+* [redshift-database.ipynb](redshift-database.ipynb) : interacting with DESI pipeline and redshift data in
+    a database.
 * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
     connecting the coefficients to template spectra.
 * [RedrockPlotSpec.md](redrock/RedrockPlotSpec.md): How to plot redrock outputs
