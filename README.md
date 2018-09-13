@@ -54,6 +54,7 @@ Tutorials hosted in other packages include (but haven't been recently vetted):
 * [How to convert an SED into a simulated DESI spectrum](https://github.com/desihub/specsim/blob/master/docs/nb/SimulationExamples.ipynb)
 * [How to run fiber assignment](https://desi.lbl.gov/DocDB/cgi-bin/private/ShowDocument?docid=2742)
 * [How to run quicksurvey catalog-level simulations](https://github.com/desihub/quicksurvey_example)
+* [How to make all-sky plots](https://github.com/desihub/desiutil/blob/master/doc/nb/SkyMapExamples.ipynb)
 
 # For authors of tutorials
 
