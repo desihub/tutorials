@@ -102,3 +102,7 @@ ENV/
 
 # SQLite database produced by redshift-database tutorial.
 minitest-*.db
+
+# Files produced by GFA tutorial
+gfa.ecsv
+bright-gfa.fits
