@@ -16,8 +16,8 @@ First, get a NERSC account following the instructions on the [DESI wiki](https:/
 
 Install the DESI jupyter kernel from cori.nersc.gov (you only need to do this once):
 ```
-source /project/projectdirs/desi/software/desi_environment.sh 18.6
-$DESIMODULES/install_jupyter_kernel.sh 18.6
+source /project/projectdirs/desi/software/desi_environment.sh 18.7
+$DESIMODULES/install_jupyter_kernel.sh 18.7
 ```
 
 Get a copy of the tutorials on cori.nersc.gov:
