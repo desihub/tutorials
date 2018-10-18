@@ -12,7 +12,10 @@ repositories; tutorials here are generally for:
 
 These tutorials use a Jupyter server at NERSC, which provides pre-installed DESI code and access to all DESI data at NERSC without having to download or install anything locally.
 
-First, get a NERSC account following the instructions on the [DESI wiki](https://desi.lbl.gov/trac/wiki/Computing/AccessNersc).
+First, get a NERSC account following the instructions on the [DESI wiki](https://desi.lbl.gov/trac/wiki/Computing/AccessNersc). Then login to cori:
+```
+ssh cori.nersc.gov
+```
 
 Install the DESI jupyter kernel from cori.nersc.gov (you only need to do this once):
 ```
@@ -22,6 +25,7 @@ $DESIMODULES/install_jupyter_kernel.sh 18.7
 
 Get a copy of the tutorials on cori.nersc.gov:
 ```
+mkdir -p $HOME/desi/git
 cd $HOME/desi/git
 git clone https://github.com/desihub/tutorials
 ```
