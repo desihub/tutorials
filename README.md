@@ -37,17 +37,15 @@ Login at https://jupyter-dev.nersc.gov and browse to wherever you cloned the tut
 # Menu of tutorials
 
 Tutorials in this repository include
-* [survey-simulations.ipynb](survey-simulations.ipynb): how to use "survey simulation" outputs
 * [Intro_to_DESI_spectra.ipynb](Intro_to_DESI_spectra.ipynb): how to find and read DESI spectra
 * [simulating-desi-spectra.ipynb](simulating-desi-spectra.ipynb): how to simulate your own spectra
+* [survey-simulations.ipynb](survey-simulations.ipynb): how to use "survey simulation" outputs
 * [dc17a-truth.ipynb](dc17a-truth.ipynb): connecting dc17a spectra and redshift catalog entries
     back to their input truth.
 * [redshift-database.ipynb](redshift-database.ipynb) : interacting with DESI pipeline and redshift data in
     a database.
 * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
     connecting the coefficients to template spectra.
-* [RedrockPlotSpec.md](redrock/RedrockPlotSpec.md): How to plot redrock outputs
-    (spectra, template fits, chi2 vs. z)
 
 These links allow you to browse the results of these tutorials from GitHub; to run them yourself follow the instructions in the "Getting started" section above.
 
