@@ -1,0 +1,37 @@
+# mock target configuration file
+targets:
+    QSO: {
+        target_type: QSO,
+        mockfile: '{DESI_ROOT}/mocks/DarkSky/v1.0.1/qso_0_inpt.fits',
+        format: gaussianfield,
+        zmax_qso: 1.8,
+        use_simqso: True,
+        density: 120,
+    }
+    LYA: {
+        target_type: QSO,
+        mockfile: '{DESI_ROOT}/mocks/lya_forest/london/v4.0/master.fits',
+        format: CoLoRe,
+        nside_lya: 16,
+        zmin_lya: 1.8,
+        density: 50,
+        use_simqso: True,
+        balprob: 0.0,
+        add_dla: True,
+    }
+    MWS_MAIN: {
+        target_type: STAR,
+        mockfile: '{DESI_ROOT}/mocks/mws/galaxia/alpha/v0.0.5/healpix',
+        nside_galaxia: 8,
+        format: galaxia,
+    }
+    WD: {
+        target_type: WD,
+        mockfile: '{DESI_ROOT}/mocks/mws/wd/v1.0.0/mock_wd.fits',
+        format: mws_wd,
+    }
+    SKY: {
+        target_type: SKY,
+        mockfile: '{DESI_ROOT}/mocks/uniformsky/0.1/uniformsky-2048-0.1.fits',
+        format: uniformsky,
+    }
