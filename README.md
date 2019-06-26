@@ -30,7 +30,10 @@ cd $HOME/desi/git
 git clone https://github.com/desihub/tutorials
 ```
 
-Login at https://jupyter-dev.nersc.gov and browse to wherever you cloned the tutorials repository
+Login at https://jupyter.nersc.gov and enter your credentials and OTP.
+Then, click on shared Cori icon and wait for your server to spin up.
+Click on the kernel you created (i.e. 19.2) and browse to wherever you 
+cloned the tutorials repository using the menu on the left. 
 (`$HOME/desi/git/tutorials` in the above commands).  Click on a tutorial to try it out.
 
 
