@@ -49,6 +49,10 @@ Tutorials in this repository include
     a database.
 * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
     connecting the coefficients to template spectra.
+* [FiberAssign.ipynb](FiberAssign.ipynb): fiber assignment
+* [FiberAssignDECaLS.ipynb](FiberAssignDECaLS.ipynb): use observational data from DR7 to prepare it for fiberassign
+* [FiberAssignMocks.ipynb](FiberAssignMocks.ipynb): Generate mock files from simulations to feed into fiberassign
+
 
 These links allow you to browse the results of these tutorials from GitHub; to run them yourself follow the instructions in the "Getting started" section above.
 
