@@ -22,7 +22,7 @@ targets:
     }
     LYA: {
         target_type: QSO,
-        mockfile: '{DESI_ROOT}/mocks/lya_forest/london/v4.0/master.fits',
+        mockfile: '{DESI_ROOT}/mocks/lya_forest/develop/london/v4.0/master.fits',
         format: CoLoRe,
         nside_lya: 16,
         zmin_lya: 1.8,
