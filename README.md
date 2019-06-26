@@ -19,8 +19,8 @@ ssh cori.nersc.gov
 
 Install the DESI jupyter kernel from cori.nersc.gov (you only need to do this once):
 ```
-source /project/projectdirs/desi/software/desi_environment.sh 18.7
-$DESIMODULES/install_jupyter_kernel.sh 18.7
+source /project/projectdirs/desi/software/desi_environment.sh 19.2
+$DESIMODULES/install_jupyter_kernel.sh 19.2
 ```
 
 Get a copy of the tutorials on cori.nersc.gov:
