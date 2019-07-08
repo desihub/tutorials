@@ -19,8 +19,8 @@ ssh cori.nersc.gov
 
 Install the DESI jupyter kernel from cori.nersc.gov (you only need to do this once):
 ```
-source /project/projectdirs/desi/software/desi_environment.sh 18.7
-$DESIMODULES/install_jupyter_kernel.sh 18.7
+source /project/projectdirs/desi/software/desi_environment.sh 19.2
+$DESIMODULES/install_jupyter_kernel.sh 19.2
 ```
 
 Get a copy of the tutorials on cori.nersc.gov:
@@ -30,7 +30,10 @@ cd $HOME/desi/git
 git clone https://github.com/desihub/tutorials
 ```
 
-Login at https://jupyter-dev.nersc.gov and browse to wherever you cloned the tutorials repository
+Login at https://jupyter.nersc.gov and enter your credentials and OTP.
+Then, click on shared Cori icon and wait for your server to spin up.
+Click on the kernel you created (i.e. 19.2) and browse to wherever you 
+cloned the tutorials repository using the menu on the left. 
 (`$HOME/desi/git/tutorials` in the above commands).  Click on a tutorial to try it out.
 
 
@@ -46,6 +49,10 @@ Tutorials in this repository include
     a database.
 * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
     connecting the coefficients to template spectra.
+* [FiberAssign.ipynb](FiberAssign.ipynb): fiber assignment
+* [FiberAssignDECaLS.ipynb](FiberAssignDECaLS.ipynb): use observational data from DR7 to prepare it for fiberassign
+* [FiberAssignMocks.ipynb](FiberAssignMocks.ipynb): Generate mock files from simulations to feed into fiberassign
+
 
 These links allow you to browse the results of these tutorials from GitHub; to run them yourself follow the instructions in the "Getting started" section above.
 
