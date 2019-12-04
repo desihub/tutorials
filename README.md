@@ -19,8 +19,8 @@ ssh cori.nersc.gov
 
 Install the DESI jupyter kernel from cori.nersc.gov (you only need to do this once):
 ```
-source /project/projectdirs/desi/software/desi_environment.sh 19.2
-$DESIMODULES/install_jupyter_kernel.sh 19.2
+source /project/projectdirs/desi/software/desi_environment.sh 19.10
+$DESIMODULES/install_jupyter_kernel.sh 19.10
 ```
 
 Get a copy of the tutorials on cori.nersc.gov:
@@ -31,10 +31,10 @@ git clone https://github.com/desihub/tutorials
 ```
 
 Login at https://jupyter.nersc.gov and enter your credentials and OTP.
-Then, click on shared Cori icon and wait for your server to spin up.
-Click on the kernel you created (i.e. 19.2) and browse to wherever you 
-cloned the tutorials repository using the menu on the left. 
-(`$HOME/desi/git/tutorials` in the above commands).  Click on a tutorial to try it out.
+Then, click on the Cori Shared CPU Node "Start" button.
+In the file browser on the left, navigate to wherever you cloned the
+tutorials repository.  (`$HOME/desi/git/tutorials` in the above commands).
+Click on a tutorial to try it out.
 
 
 # Menu of tutorials
