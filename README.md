@@ -19,8 +19,14 @@ ssh cori.nersc.gov
 
 Install the DESI jupyter kernel from cori.nersc.gov (you only need to do this once):
 ```
-source /project/projectdirs/desi/software/desi_environment.sh 19.10
-$DESIMODULES/install_jupyter_kernel.sh 19.10
+source /project/projectdirs/desi/software/desi_environment.sh 19.12
+$DESIMODULES/install_jupyter_kernel.sh 19.12
+```
+
+Some tutorials require the master version of the code; login to a new window and run:
+```
+source /project/projectdirs/desi/software/desi_environment.sh master
+$DESIMODULES/install_jupyter_kernel.sh master
 ```
 
 Get a copy of the tutorials on cori.nersc.gov:
@@ -40,7 +46,8 @@ Click on a tutorial to try it out.
 # Menu of tutorials
 
 Tutorials in this repository include
-* [Intro_to_DESI_spectra.ipynb](Intro_to_DESI_spectra.ipynb): how to find and read DESI spectra
+* [Intro_to_DESI_SV_spectra.ipynb](Intro_to_DESI_SV_spectra.ipynb): working with real DESI data from minisv2
+* [Intro_to_DESI_spectra.ipynb](Intro_to_DESI_spectra.ipynb): how to find and read DESI spectra (based on sims, similar to what main survey will be)
 * [simulating-desi-spectra.ipynb](simulating-desi-spectra.ipynb): how to simulate your own spectra
 * [survey-simulations.ipynb](survey-simulations.ipynb): how to use "survey simulation" outputs
 * [dc17a-truth.ipynb](dc17a-truth.ipynb): connecting dc17a spectra and redshift catalog entries
