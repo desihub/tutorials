@@ -71,6 +71,7 @@ Tutorials hosted in other packages include (but haven't been recently vetted):
 * [How to run fiber assignment](https://desi.lbl.gov/DocDB/cgi-bin/private/ShowDocument?docid=2742)
 * [How to run quicksurvey catalog-level simulations](https://github.com/desihub/quicksurvey_example)
 * [How to make all-sky plots](https://github.com/desihub/desiutil/blob/master/doc/nb/SkyMapExamples.ipynb)
+* [Working with DESI target bits (Main, CMX, SV)](https://github.com/desihub/desitarget/blob/master/doc/nb/target-selection-bits-and-bitmasks.ipynb)
 
 # For authors of tutorials
 
