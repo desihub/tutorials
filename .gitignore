@@ -102,3 +102,6 @@ ENV/
 
 # SQLite database produced by redshift-database tutorial.
 minitest-*.db
+
+# Generated scripts created by notebooks
+select_targets.py
