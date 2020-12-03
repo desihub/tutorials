@@ -7,6 +7,8 @@ repositories; tutorials here are generally for:
 * Tutorials to be presented at a collaboration meeting where we want to decouple
   updates to the tutorial itself from the desispec, desisim, etc. code versions that
   the tutorial is describing.
+* Some tutorials are grouped under a dated directory, e.g. Dec2020, for tutorials
+  presented at a specific DESI meeting.
 
 # Getting started
 
@@ -17,15 +19,11 @@ First, get a NERSC account following the instructions on the [DESI wiki](https:/
 ssh cori.nersc.gov
 ```
 
-Install the DESI jupyter kernel from cori.nersc.gov (you only need to do this once):
+Jupyter "kernels" define a specific set of code versions to use.  To install
+DESI jupyter kernels from cori.nersc.gov (you only need to do this once):
 ```
-source /project/projectdirs/desi/software/desi_environment.sh 19.12
-$DESIMODULES/install_jupyter_kernel.sh 19.12
-```
-
-Some tutorials require the master version of the code; login to a new window and run:
-```
-source /project/projectdirs/desi/software/desi_environment.sh master
+source /project/projectdirs/desi/software/desi_environment.sh 20.8
+$DESIMODULES/install_jupyter_kernel.sh 20.8
 $DESIMODULES/install_jupyter_kernel.sh master
 ```
 
@@ -36,7 +34,7 @@ cd $HOME/desi/git
 git clone https://github.com/desihub/tutorials
 ```
 
-Login at https://jupyter.nersc.gov and enter your credentials and OTP.
+Login at https://jupyter.nersc.gov and enter your credentials and OTP (One Time Password).
 Then, click on the Cori Shared CPU Node "Start" button.
 In the file browser on the left, navigate to wherever you cloned the
 tutorials repository.  (`$HOME/desi/git/tutorials` in the above commands).
@@ -50,16 +48,13 @@ Tutorials in this repository include
 * [Intro_to_DESI_spectra.ipynb](Intro_to_DESI_spectra.ipynb): how to find and read DESI spectra (based on sims, similar to what main survey will be)
 * [simulating-desi-spectra.ipynb](simulating-desi-spectra.ipynb): how to simulate your own spectra
 * [survey-simulations.ipynb](survey-simulations.ipynb): how to use "survey simulation" outputs
-* [dc17a-truth.ipynb](dc17a-truth.ipynb): connecting dc17a spectra and redshift catalog entries
-    back to their input truth.
-* [redshift-database.ipynb](redshift-database.ipynb) : interacting with DESI pipeline and redshift data in
-    a database.
 * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
     connecting the coefficients to template spectra.
 * [FiberAssign.ipynb](FiberAssign.ipynb): fiber assignment
 * [FiberAssignDECaLS.ipynb](FiberAssignDECaLS.ipynb): use observational data from DR8 to prepare it for fiberassign
 * [FiberAssignMocks.ipynb](FiberAssignMocks.ipynb): Generate mock files from simulations to feed into fiberassign
-
+* [redshift-database.ipynb](redshift-database.ipynb) : interacting with DESI pipeline and redshift data in
+    a database.
 
 These links allow you to browse the results of these tutorials from GitHub; to run them yourself follow the instructions in the "Getting started" section above.
 
