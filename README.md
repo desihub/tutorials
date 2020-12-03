@@ -58,11 +58,14 @@ Tutorials in this repository include
 * [survey-simulations.ipynb](survey-simulations.ipynb): how to use "survey simulation" outputs
 * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
     connecting the coefficients to template spectra.
-* [FiberAssign.ipynb](FiberAssign.ipynb): fiber assignment
-* [FiberAssignDECaLS.ipynb](FiberAssignDECaLS.ipynb): use observational data from DR8 to prepare it for fiberassign
-* [FiberAssignMocks.ipynb](FiberAssignMocks.ipynb): Generate mock files from simulations to feed into fiberassign
+* Fiber assignment
+  * [FiberAssign.ipynb](FiberAssign.ipynb): fiber assignment basics
+  * [FiberAssignDECaLS.ipynb](FiberAssignDECaLS.ipynb): use observational data from DR8 to prepare it for fiberassign
+  * [FiberAssignMocks.ipynb](FiberAssignMocks.ipynb): Generate mock files from simulations to feed into fiberassign
+  * [FiberAssignAlgorithms_Part1.ipynb](FiberAssignAlgorithms_Part1.ipynb): a detailed look at fiberassign algorithms
+  * [FiberAssignAlgorithms_Part2.ipynb](FiberAssignAlgorithms_Part2.ipynb): fiberassign with multiple survey passes
 * [redshift-database.ipynb](redshift-database.ipynb) : interacting with DESI pipeline and redshift data in
-    a database.
+    a database (work in progress).
 
 These links allow you to browse the results of these tutorials from GitHub; to run them yourself follow the instructions in the "Getting started" section above.
 
