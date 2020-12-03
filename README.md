@@ -40,6 +40,14 @@ In the file browser on the left, navigate to wherever you cloned the
 tutorials repository.  (`$HOME/desi/git/tutorials` in the above commands).
 Click on a tutorial to try it out.
 
+If you click on a tutorial and it prompts you to "Select Kernel" from a drop down list, it
+means that the default tutorial kernel in GitHub isn't one of the ones that you have already
+installed and it is asking you to select from one of the kernels that you do have installed.
+In most cases the tutorials will work with the latest release (e.g. 20.8) and
+the "master" release (updated nightly, name to switch to "main" in 2021).  Otherwise the
+text at the top of the tutorial will tell you which release is needed.  Go back to
+cori.nersc.gov, run "$DESIMODULES/install_jupyter_kernel.sh VERSION" for the required version,
+and reload the Jupyter page.
 
 # Menu of tutorials
 
