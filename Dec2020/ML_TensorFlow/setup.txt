@@ -1,0 +1,30 @@
+To set up the QuasarNET kernel:
+
+
+# 0. Move to the directory where you would like QuasarNET to be stored
+
+
+# 1. Create a Conda environment
+
+conda create -n qnet_tutorial python=3 scipy numpy fitsio h5py ipykernel pandas scikit-learn
+source activate qnet_tutorial
+
+
+# 2. Set up a Jupyter kernel
+
+python -m ipykernel install --user --name qnet_tutorial --display-name qnet_tutorial
+
+
+# 3. Install TensorFlow
+
+pip install tensorflow==2.2.0
+
+
+# 4. Clone the QuasarNET repo and install
+
+git clone https://github.com/ngbusca/QuasarNET.git QuasarNET_tutorial
+cd QuasarNET_tutorial
+python setup.py install
+
+
+Once you have followed these steps, then open up the Jupyter notebook for the tutorial, and choose the "qnet_tutorial" option from the dropdown list of kernels in the top right corner.
