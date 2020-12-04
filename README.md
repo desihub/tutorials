@@ -52,6 +52,7 @@ and reload the Jupyter page.
 # Menu of tutorials
 
 Tutorials in this repository include
+* [andes_nz.ipynb](andes_nz.ipynb): making an n(z) histogram from the "andes" spectro production zbest files.
 * [Intro_to_DESI_SV_spectra.ipynb](Intro_to_DESI_SV_spectra.ipynb): working with real DESI data from minisv2
 * [Intro_to_DESI_spectra.ipynb](Intro_to_DESI_spectra.ipynb): how to find and read DESI spectra (based on sims, similar to what main survey will be)
 * [simulating-desi-spectra.ipynb](simulating-desi-spectra.ipynb): how to simulate your own spectra
