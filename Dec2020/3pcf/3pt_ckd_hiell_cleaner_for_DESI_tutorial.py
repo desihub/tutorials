@@ -45,8 +45,8 @@ if read_from_file:
     boxsize *= rescale #this is important so the periodic duplicates are made correctly.
     galx, galy, galz, weights = np.loadtxt('sample_feb27_unity_weights_rescale400_first500.dat',unpack=True) #Put your local file title here.
     galx, galy, galz = galx*rescale, galy*rescale, galz*rescale
-    print "read galaxies from file and converted using boxsize"
-    print "number in file=",len(galx)
+    print("read galaxies from file and converted using boxsize")
+    print("number in file=",len(galx))
 
 #exit()
 
@@ -92,12 +92,12 @@ def shiftbox(galx,galy,galz,shiftbox,doxshift,doyshift,dozshift):
     galysh=galy+doyshift*boxsize
     galzsh=galz+dozshift*boxsize
 
-    galcoordssh=zip(galxsh.ravel(),galysh.ravel(),galzsh.ravel())
+    galcoordssh=list(zip(galxsh.ravel(),galysh.ravel(),galzsh.ravel()))
 
     return galcoordssh
 
 
-print "time to set constants and bins=",end_time-start_time
+print("time to set constants and bins=",end_time-start_time)
 
 start_time=time.clock()
 
@@ -111,27 +111,27 @@ file.close()
 print "coordinates written to file"
 '''
     
-galcoords=zip(galx.ravel(),galy.ravel(),galz.ravel())
+galcoords=list(zip(galx.ravel(),galy.ravel(),galz.ravel()))
 #now loop over shiftbox to append virtual boxes to coordinate list.
 for doxshift in (-1,1,0):
     for doyshift in (-1,1,0):
         for dozshift in (-1,1,0):
-            print doxshift,doyshift,dozshift
+            print(doxshift,doyshift,dozshift)
             if doxshift==0 and doyshift==0 and dozshift==0:
-                print "no shift executed because in genuine box"
+                print("no shift executed because in genuine box")
             else:
                 galcoords=np.append(galcoords,shiftbox(galx,galy,galz,boxsize,doxshift,doyshift,dozshift),axis=0) #Note axis=0 is quite important to maintain ordered triplet structure of data; if you don't include you get 27*ngals*3 values, rather than 27*ngals ordered triplets.
 
 
 end_time=time.clock()
 
-print "time to throw",ngal,"random galaxies, shift them, and zip them together= (*)",end_time-start_time
+print("time to throw",ngal,"random galaxies, shift them, and zip them together= (*)",end_time-start_time)
 
 start_time=time.clock()
 #put galaxies in a tree
 tree=spatial.cKDTree(galcoords,leafsize=3000)
 end_time=time.clock()
-print "time to put",ngal,"random galaxies in tree=(*)",end_time-start_time
+print("time to put",ngal,"random galaxies in tree=(*)",end_time-start_time)
 
 #Choose to work on first nperit galaxies.
 start_time=time.clock()
@@ -142,11 +142,11 @@ querytime=0.
 complextime=0.
 realtime=0.
 for i in range(0,totalits): #do nperit galaxies at a time for totalits total iterations
-    print "group number=",i
+    print("group number=",i)
     centralgals=galcoords[i*nperit:(i+1)*nperit] #select out central galaxies to use; note central galaxies must be first in list of coordinates including shift, which they will be by construction.
-    print "len centralgals=", len(centralgals)
-    print "using galaxies from", i*nperit, "to", (i+1)*nperit-1
-    print "i*nperit=",i*nperit
+    print("len centralgals=", len(centralgals))
+    print("using galaxies from", i*nperit, "to", (i+1)*nperit-1)
+    print("i*nperit=",i*nperit)
     start_time_query=time.clock()
     ball=tree.query_ball_point(centralgals,rmax+eps) #object with, for each index, an array with the ball of rmax about the central galaxy of that index; e.g. ball[0] gives indices of gals. within rmax of the 0th centralgal
     end_time_query=time.clock()
@@ -337,13 +337,13 @@ zeta8 *= 1./(4.*np.pi)
 zeta9 *= 1./(4.*np.pi)
 zeta10 *= 1./(4.*np.pi)
 
-print "number of galaxies done=", count
+print("number of galaxies done=", count)
 
-print "zeta0=",zeta0
-print "zeta1=",zeta1
-print "zeta2=",zeta2
-print "zeta3=",zeta3
-print "zeta4=",zeta4
+print("zeta0=",zeta0)
+print("zeta1=",zeta1)
+print("zeta2=",zeta2)
+print("zeta3=",zeta3)
+print("zeta4=",zeta4)
 postfix = 'DESI_Tutorial_results' #Use this to tile arrays you save.
 np.save('zeta0test_'+postfix,zeta0)
 np.save('zeta1test_'+postfix,zeta1)
@@ -356,33 +356,33 @@ np.save('zeta7test_'+postfix,zeta7)
 np.save('zeta8test_'+postfix,zeta8)
 np.save('zeta9test_'+postfix,zeta9)
 np.save('zeta10test_'+postfix,zeta10)
-print "results saved to 10 numpy array files"
+print("results saved to 10 numpy array files")
 
-print "--------------------"
-print "--------------------"
-print "--------------------"
+print("--------------------")
+print("--------------------")
+print("--------------------")
 
 #print to match Eisenstein C++ code output format
 for bin1 in np.arange(0,nbins):
     for bin2 in np.arange(0,nbins/2+1)[::-1]:
         if bin2<=bin1:
-            print "#B1 B2 l=0 l=1            l=2          l=3                    l=4"
-            print bin1, bin2, np.real(zeta0[bin1,bin2]),np.real(zeta1[bin1,bin2]),np.real(zeta2[bin1,bin2]),np.real(zeta3[bin1,bin2]),np.real(zeta4[bin1,bin2]),np.real(zeta5[bin1,bin2]),np.real(zeta6[bin1,bin2]),np.real(zeta7[bin1,bin2]),np.real(zeta8[bin1,bin2]),np.real(zeta9[bin1,bin2])
+            print("#B1 B2 l=0 l=1            l=2          l=3                    l=4")
+            print(bin1, bin2, np.real(zeta0[bin1,bin2]),np.real(zeta1[bin1,bin2]),np.real(zeta2[bin1,bin2]),np.real(zeta3[bin1,bin2]),np.real(zeta4[bin1,bin2]),np.real(zeta5[bin1,bin2]),np.real(zeta6[bin1,bin2]),np.real(zeta7[bin1,bin2]),np.real(zeta8[bin1,bin2]),np.real(zeta9[bin1,bin2]))
             #print bin1, bin2, np.real(zeta0[bin1,bin2])*2,np.real(zeta1[bin1,bin2])/np.real(zeta0[bin1,bin2]),np.real(zeta2[bin1,bin2])/ np.real(zeta0[bin1,bin2]),np.real(zeta3[bin1,bin2])/np.real(zeta0[bin1,bin2]),np.real(zeta4[bin1,bin2])/np.real(zeta0[bin1,bin2]),np.real(zeta5[bin1,bin2])/np.real(zeta0[bin1,bin2]),np.real(zeta6[bin1,bin2])/np.real(zeta0[bin1,bin2]),np.real(zeta7[bin1,bin2])/np.real(zeta0[bin1,bin2]),np.real(zeta8[bin1,bin2])/np.real(zeta0[bin1,bin2]),np.real(zeta9[bin1,bin2])/np.real(zeta0[bin1,bin2]),np.real(zeta10[bin1,bin2])/np.real(zeta0[bin1,bin2])
 
 
 end_time=time.clock()
 timecost=end_time-start_time
 ballfrac=querytime/timecost
-print "ngal=", ngal, "time for computation=",timecost
-print "fraction of time for query_ball=",ballfrac
-print "histtime=", histtime
-print "bintime=",bintime
-print "transformation time", transftime
-print "ball query time=", querytime
-print "transftime+bintime+histtime+balltime=",transftime+histtime+bintime+querytime
-print "complextesttime=",complextime
-print "realtesttime=",realtime
+print("ngal=", ngal, "time for computation=",timecost)
+print("fraction of time for query_ball=",ballfrac)
+print("histtime=", histtime)
+print("bintime=",bintime)
+print("transformation time", transftime)
+print("ball query time=", querytime)
+print("transftime+bintime+histtime+balltime=",transftime+histtime+bintime+querytime)
+print("complextesttime=",complextime)
+print("realtesttime=",realtime)
 
 
 
@@ -424,7 +424,7 @@ if docheck:
 
     count2=0
     for m in range(0,ngal):
-        print "m=", m
+        print("m=", m)
         centralgal=galcoords[m]
         ballct=tree.query_ball_point(centralgal,rmax+eps)
         #print "ballct=",ballct
@@ -434,15 +434,15 @@ if docheck:
         galxtrct=galcoords[ballct][:,0]-centralgal[0]
         galytrct=galcoords[ballct][:,1]-centralgal[1]
         galztrct=galcoords[ballct][:,2]-centralgal[2]
-        print "ballct=", ballct
-        print "galcoords", galcoords
+        print("ballct=", ballct)
+        print("galcoords", galcoords)
         #exit()
         
         #galxtrct=galx[ballct]-centralgal[0]
         #galytrct=galy[ballct]-centralgal[1]
         #galztrct=galz[ballct]-centralgal[2]
         galrtrct=(galxtrct**2+galytrct**2+galztrct**2+eps)**.5
-        print "galrtrct=", galrtrct
+        print("galrtrct=", galrtrct)
         for k in range(lenballct-1):
             #print "m, k", m, ballct[k]
             for h in range(lenballct-1):
@@ -504,7 +504,7 @@ if docheck:
     zeta10ct *= (21./2.)/eightpi_sq
     end_time=time.clock()
     timecostct=end_time-start_time
-    print "timecostct=", timecostct
+    print("timecostct=", timecostct)
 
 #check symmetry
 #print "zeta1 check", sum(abs(zeta1-np.transpose(zeta1)))
@@ -515,17 +515,17 @@ if docheck:
 #print "zeta2ct check", sum(abs(zeta2ct-np.transpose(zeta2ct)))
 #print "zeta3ct check", sum(abs(zeta3ct-np.transpose(zeta3ct)))
 
-    print "zeta0 comparison check", zeta0-zeta0ct
-    print "zeta1 comparison check", zeta1-zeta1ct
-    print "zeta2 comparison check", zeta2-zeta2ct
-    print "zeta3 comparison check", zeta3-zeta3ct
-    print "zeta4 comparison check", zeta4-zeta4ct
-    print "zeta5 comparison check", zeta5-zeta5ct
-    print "zeta6 comparison check", zeta6-zeta6ct
-    print "zeta7 comparison check", zeta7-zeta7ct
-    print "zeta8 comparison check", zeta8-zeta8ct
-    print "zeta9 comparison check", zeta9-zeta9ct
-    print "zeta10 comparison check", zeta10-zeta10ct
+    print("zeta0 comparison check", zeta0-zeta0ct)
+    print("zeta1 comparison check", zeta1-zeta1ct)
+    print("zeta2 comparison check", zeta2-zeta2ct)
+    print("zeta3 comparison check", zeta3-zeta3ct)
+    print("zeta4 comparison check", zeta4-zeta4ct)
+    print("zeta5 comparison check", zeta5-zeta5ct)
+    print("zeta6 comparison check", zeta6-zeta6ct)
+    print("zeta7 comparison check", zeta7-zeta7ct)
+    print("zeta8 comparison check", zeta8-zeta8ct)
+    print("zeta9 comparison check", zeta9-zeta9ct)
+    print("zeta10 comparison check", zeta10-zeta10ct)
 
 
 
