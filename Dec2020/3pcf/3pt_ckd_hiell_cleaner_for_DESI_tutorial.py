@@ -48,6 +48,8 @@ if read_from_file:
     print "read galaxies from file and converted using boxsize"
     print "number in file=",len(galx)
 
+#exit()
+
 
 numell=11
 #throw randoms for galaxies in box.
