@@ -6,8 +6,8 @@ To set up the QuasarNET kernel:
 
 # 1. Create a Conda environment
 
-conda create -n qnet_tutorial python=3 scipy numpy fitsio h5py ipykernel pandas
-source activate qnet
+conda create -n qnet_tutorial python=3 scipy numpy fitsio h5py ipykernel pandas scikit-learn
+source activate qnet_tutorial
 
 
 # 2. Set up a Jupyter kernel
