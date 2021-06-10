@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH -A desi
+#SBATCH -N 1
+#SBATCH -t 00:10:00
+#SBATCH -C haswell
+#SBATCH -q debug 
+
+srun python test_script.py
