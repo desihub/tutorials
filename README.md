@@ -54,7 +54,6 @@ and reload the Jupyter page.
 Tutorials in this repository include
 * [spectro_nz.ipynb](spectro_nz.ipynb): making an n(z) histogram from the spectro production zbest files.
 * [Intro_to_DESI_SV_spectra.ipynb](Intro_to_DESI_SV_spectra.ipynb): working with real DESI data from minisv2
-* [Intro_to_DESI_spectra.ipynb](Intro_to_DESI_spectra.ipynb): how to find and read DESI spectra (based on sims, similar to what main survey will be)
 * [simulating-desi-spectra.ipynb](simulating-desi-spectra.ipynb): how to simulate your own spectra
 * [survey-simulations.ipynb](survey-simulations.ipynb): how to use "survey simulation" outputs
 * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
