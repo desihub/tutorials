@@ -388,9 +388,6 @@ the sky model isn't supposed to have that amount of flexibility.  Within
 30 minutes Julien had debugged the root cause and fixed it with
 [desispec PR #1452](https://github.com/desihub/desispec/pull/1452).
 
-It's still unclear what the feature is for that tile that causes this bug
-to be triggered here and not elsewhere.
-
 ## Before / After
 
 With the sky model fix from Julien in [PR #1452](https://github.com/desihub/desispec/pull/1452),
