@@ -1,0 +1,18 @@
+# uses the definitions from #https://github.com/desihub/tutorials/blob/main/Dec2021/Everest_Tutorial_Dec2021.ipynb
+
+font.size : 22
+axes.linewidth : 3.0
+xtick.major.size : 6.0
+xtick.minor.size : 4.0
+xtick.major.width : 3.0
+xtick.minor.width : 1.5
+xtick.direction : in
+xtick.minor.visible : True 
+xtick.top : True
+ytick.major.size : 6.0
+ytick.minor.size : 4.0
+ytick.major.width : 3.0
+ytick.minor.width : 1.5 
+ytick.direction : in
+ytick.minor.visible : True
+ytick.right : True
