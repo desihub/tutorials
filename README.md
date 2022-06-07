@@ -56,18 +56,13 @@ Tutorials in this repository include
 * DESI Meeting Dec 2020
   * Dec2020/LSS.ipynb
   * Dec2020/ML_TensorFlow/ML_TensorFlow.ipynb
-  * Dec2020/ML_TensorFlow/ML_TensorFlow.ipynb
-  * Dec2020/galaxies/fitting_redshifts.ipynb
   * Dec2020/galaxies/fitting_redshifts.ipynb
   * Dec2020/galaxies/fitting_sps.ipynb
-  * Dec2020/galaxies/fitting_sps.ipynb
-  * Dec2020/quickquasars/quickquasars.ipynb
   * Dec2020/quickquasars/quickquasars.ipynb
 
 * DESI Meeting June 2021
   * June2021/Intro_to_a_DESI_Release.ipynb
   * June2021/git-intro.ipynb
-  * June2021/nersc_computing/computing_at_nersc.ipynb
   * June2021/nersc_computing/computing_at_nersc.ipynb
 
 * DESI Meeting Dec 2021
