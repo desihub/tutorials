@@ -64,15 +64,15 @@ Tutorials in this repository include
   * Dec2020/quickquasars/quickquasars.ipynb
   * Dec2020/quickquasars/quickquasars.ipynb
 
-* DESI Meeting Dec 2021
-  * Dec2021/Everest_Tutorial_Dec2021.ipynb
-  * Dec2021/SpectroperfectionismExample.ipynb
-
 * DESI Meeting June 2021
   * June2021/Intro_to_a_DESI_Release.ipynb
   * June2021/git-intro.ipynb
   * June2021/nersc_computing/computing_at_nersc.ipynb
   * June2021/nersc_computing/computing_at_nersc.ipynb
+
+* DESI Meeting Dec 2021
+  * Dec2021/Everest_Tutorial_Dec2021.ipynb
+  * Dec2021/SpectroperfectionismExample.ipynb
 
 * Fiber assignment
   * [FiberAssign.ipynb](fiberassign/FiberAssign.ipynb): fiber assignment basics
