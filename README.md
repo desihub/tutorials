@@ -52,20 +52,55 @@ and reload the Jupyter page.
 # Menu of tutorials
 
 Tutorials in this repository include
-* [spectro_nz.ipynb](spectro_nz.ipynb): making an n(z) histogram from the spectro production zbest files.
-* [Intro_to_DESI_SV_spectra.ipynb](Intro_to_DESI_SV_spectra.ipynb): working with real DESI data from minisv2
-* [simulating-desi-spectra.ipynb](simulating-desi-spectra.ipynb): how to simulate your own spectra
-* [survey-simulations.ipynb](survey-simulations.ipynb): how to use "survey simulation" outputs
-* [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
-    connecting the coefficients to template spectra.
+
+* DESI Meeting Dec 2020
+  * Dec2020/LSS.ipynb
+  * Dec2020/ML_TensorFlow/ML_TensorFlow.ipynb
+  * Dec2020/ML_TensorFlow/ML_TensorFlow.ipynb
+  * Dec2020/galaxies/fitting_redshifts.ipynb
+  * Dec2020/galaxies/fitting_redshifts.ipynb
+  * Dec2020/galaxies/fitting_sps.ipynb
+  * Dec2020/galaxies/fitting_sps.ipynb
+  * Dec2020/quickquasars/quickquasars.ipynb
+  * Dec2020/quickquasars/quickquasars.ipynb
+
+* DESI Meeting Dec 2021
+  * Dec2021/Everest_Tutorial_Dec2021.ipynb
+  * Dec2021/SpectroperfectionismExample.ipynb
+
+* DESI Meeting June 2021
+  * June2021/Intro_to_a_DESI_Release.ipynb
+  * June2021/git-intro.ipynb
+  * June2021/nersc_computing/computing_at_nersc.ipynb
+  * June2021/nersc_computing/computing_at_nersc.ipynb
+
 * Fiber assignment
-  * [FiberAssign.ipynb](FiberAssign.ipynb): fiber assignment basics
-  * [FiberAssignDECaLS.ipynb](FiberAssignDECaLS.ipynb): use observational data from DR8 to prepare it for fiberassign
-  * [FiberAssignMocks.ipynb](FiberAssignMocks.ipynb): Generate mock files from simulations to feed into fiberassign
-  * [FiberAssignAlgorithms_Part1.ipynb](FiberAssignAlgorithms_Part1.ipynb): a detailed look at fiberassign algorithms
-  * [FiberAssignAlgorithms_Part2.ipynb](FiberAssignAlgorithms_Part2.ipynb): fiberassign with multiple survey passes
-* [redshift-database.ipynb](redshift-database.ipynb) : interacting with DESI pipeline and redshift data in
+  * [FiberAssign.ipynb](fiberassign/FiberAssign.ipynb): fiber assignment basics
+  * [FiberAssignDECaLS.ipynb](fiberassign/FiberAssignDECaLS.ipynb): use observational data from DR8 to prepare it for fiberassign
+  * [FiberAssignMocks.ipynb](fiberassign/FiberAssignMocks.ipynb): Generate mock files from simulations to feed into fiberassign
+  * [FiberAssignAlgorithms_Part1.ipynb](fiberassign/FiberAssignAlgorithms_Part1.ipynb): a detailed look at fiberassign algorithms
+  * [FiberAssignAlgorithms_Part2.ipynb](fiberassign/FiberAssignAlgorithms_Part2.ipynb): fiberassign with multiple survey passes
+  * fiberassign/restrict_reach.ipynb
+ 
+* Redrock
+  * redrock/RedrockBOSSDemo.ipynb
+  * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
+    connecting the coefficients to template spectra.* [redshift-database.ipynb](redshift-database.ipynb) : interacting with DESI pipeline and redshift data in
     a database (work in progress).
+
+* [simulating-desi-spectra.ipynb](simulating-desi-spectra.ipynb): how to simulate your own spectra
+* [spectro_completeness.ipynb](spectro_completeness.ipynb): computing spectroscopic completeness on DESI data. 
+* [spectro_nz.ipynb](spectro_nz.ipynb): making an n(z) histogram from the spectro production zbest files.
+* [survey-simulations.ipynb](survey-simulations.ipynb): how to use "survey simulation" outputs
+* [Intro_to_DESI_SV_spectra.ipynb](Intro_to_DESI_SV_spectra.ipynb): working with real DESI data from minisv2
+
+
+* archive
+  * [archive/GFA_targets.ipynb](archive/GFA_targets.ipynb)
+  * [archive/Intro_to_DESI_spectra.ipynb](archive/Intro_to_DESI_spectra.ipynb)
+  * [archive/dc17a-truth.ipynb](archive/dc17a-truth.ipynb)
+  * [archive/quickgen.ipynb](archive/quickgen.ipynb)
+
 
 These links allow you to browse the results of these tutorials from GitHub; to run them yourself follow the instructions in the "Getting started" section above.
 
