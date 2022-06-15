@@ -3,12 +3,9 @@
 This repository is for tutorials on simulating and working with DESI data.
 There are additional more detailed tutorials within many of the DESI code
 repositories; tutorials here are generally for:
-* Topics that span individual repositories, e.g. working with data challenge outputs
-* Tutorials to be presented at a collaboration meeting where we want to decouple
-  updates to the tutorial itself from the desispec, desisim, etc. code versions that
-  the tutorial is describing.
-* Some tutorials are grouped under a dated directory, e.g. Dec2020, for tutorials
-  presented at a specific DESI meeting.
+
+* Tutorials presented at a specific DESI meeting, grouped under a dated directory. e.g. meetings/Dec2020.
+* Tutorials on broad topics (onskydata) or packages (fiberassign, redrock). 
 
 # Getting started
 
@@ -22,8 +19,8 @@ ssh cori.nersc.gov
 Jupyter "kernels" define a specific set of code versions to use.  To install
 DESI jupyter kernels from cori.nersc.gov (you only need to do this once):
 ```
-source /project/projectdirs/desi/software/desi_environment.sh 20.8
-$DESIMODULES/install_jupyter_kernel.sh 20.8
+source /project/projectdirs/desi/software/desi_environment.sh 22.2
+$DESIMODULES/install_jupyter_kernel.sh 22.2
 $DESIMODULES/install_jupyter_kernel.sh master
 ```
 
@@ -43,7 +40,7 @@ Click on a tutorial to try it out.
 If you click on a tutorial and it prompts you to "Select Kernel" from a drop down list, it
 means that the default tutorial kernel in GitHub isn't one of the ones that you have already
 installed and it is asking you to select from one of the kernels that you do have installed.
-In most cases the tutorials will work with the latest release (e.g. 20.8) and
+In most cases the tutorials will work with the latest release (e.g. 22.2) and
 the "master" release (updated nightly, name to switch to "main" in 2021).  Otherwise the
 text at the top of the tutorial will tell you which release is needed.  Go back to
 cori.nersc.gov, run "$DESIMODULES/install_jupyter_kernel.sh VERSION" for the required version,
@@ -52,20 +49,55 @@ and reload the Jupyter page.
 # Menu of tutorials
 
 Tutorials in this repository include
-* [spectro_nz.ipynb](spectro_nz.ipynb): making an n(z) histogram from the spectro production zbest files.
-* [Intro_to_DESI_SV_spectra.ipynb](Intro_to_DESI_SV_spectra.ipynb): working with real DESI data from minisv2
-* [simulating-desi-spectra.ipynb](simulating-desi-spectra.ipynb): how to simulate your own spectra
-* [survey-simulations.ipynb](survey-simulations.ipynb): how to use "survey simulation" outputs
-* [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
-    connecting the coefficients to template spectra.
+
+* DESI meetings
+    * DESI Meeting Dec 2020
+      * Dec2020/LSS.ipynb
+      * Dec2020/ML_TensorFlow/ML_TensorFlow.ipynb
+      * Dec2020/galaxies/fitting_redshifts.ipynb
+      * Dec2020/galaxies/fitting_sps.ipynb
+      * Dec2020/quickquasars/quickquasars.ipynb
+
+    * DESI Meeting June 2021
+      * June2021/Intro_to_a_DESI_Release.ipynb
+      * June2021/git-intro.ipynb
+      * June2021/nersc_computing/computing_at_nersc.ipynb
+
+    * DESI Meeting Dec 2021
+      * Dec2021/Everest_Tutorial_Dec2021.ipynb
+      * Dec2021/SpectroperfectionismExample.ipynb
+
 * Fiber assignment
-  * [FiberAssign.ipynb](FiberAssign.ipynb): fiber assignment basics
-  * [FiberAssignDECaLS.ipynb](FiberAssignDECaLS.ipynb): use observational data from DR8 to prepare it for fiberassign
-  * [FiberAssignMocks.ipynb](FiberAssignMocks.ipynb): Generate mock files from simulations to feed into fiberassign
-  * [FiberAssignAlgorithms_Part1.ipynb](FiberAssignAlgorithms_Part1.ipynb): a detailed look at fiberassign algorithms
-  * [FiberAssignAlgorithms_Part2.ipynb](FiberAssignAlgorithms_Part2.ipynb): fiberassign with multiple survey passes
-* [redshift-database.ipynb](redshift-database.ipynb) : interacting with DESI pipeline and redshift data in
+  * [FiberAssign.ipynb](fiberassign/FiberAssign.ipynb): fiber assignment basics
+  * [FiberAssignDECaLS.ipynb](fiberassign/FiberAssignDECaLS.ipynb): use observational data from DR8 to prepare it for fiberassign
+  * [FiberAssignMocks.ipynb](fiberassign/FiberAssignMocks.ipynb): Generate mock files from simulations to feed into fiberassign
+  * [FiberAssignAlgorithms_Part1.ipynb](fiberassign/FiberAssignAlgorithms_Part1.ipynb): a detailed look at fiberassign algorithms
+  * [FiberAssignAlgorithms_Part2.ipynb](fiberassign/FiberAssignAlgorithms_Part2.ipynb): fiberassign with multiple survey passes
+  * fiberassign/restrict_reach.ipynb
+ 
+* Redrock
+  * [RedrockBOSSDemo.ipynb](redrock/RedrockBOSSDemo.ipynb)
+  * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
+    connecting the coefficients to template spectra.
+  * [redshift-database.ipynb](redrock/redshift-database.ipynb) : interacting with DESI pipeline and redshift data in
     a database (work in progress).
+  
+  
+* On sky data:
+    * [spectro_completeness.ipynb](onskydata/spectro_completeness.ipynb): computing spectroscopic completeness on DESI data. 
+    * [spectro_nz.ipynb](onskydata/spectro_nz.ipynb): making an n(z) histogram from the spectro production zbest files.
+    * [Intro_to_DESI_SV_spectra.ipynb](onskydata/Intro_to_DESI_SV_spectra.ipynb): working with real DESI data from minisv2
+
+
+* archive
+  * [archive/GFA_targets.ipynb](archive/GFA_targets.ipynb)
+  * [archive/Intro_to_DESI_spectra.ipynb](archive/Intro_to_DESI_spectra.ipynb)
+  * [archive/dc17a-truth.ipynb](archive/dc17a-truth.ipynb)
+  * [archive/quickgen.ipynb](archive/quickgen.ipynb)
+  * [simulating-desi-spectra.ipynb](archive/simulating-desi-spectra.ipynb): how to simulate your own spectra
+  * [survey-simulations.ipynb](survey-simulations.ipynb): how to use "survey simulation" outputs
+
+
 
 These links allow you to browse the results of these tutorials from GitHub; to run them yourself follow the instructions in the "Getting started" section above.
 
