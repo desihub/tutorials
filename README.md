@@ -77,6 +77,7 @@ Tutorials in this repository include
  
 * Redrock
   * [RedrockBOSSDemo.ipynb](redrock/RedrockBOSSDemo.ipynb)
+  * [RedrockNthBestFit.ipynb](redrock/RedrockNthBestFit.ipynb): How to look up the Nth best redrock fit coefficients. 
   * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
     connecting the coefficients to template spectra.
   * [redshift-database.ipynb](redrock/redshift-database.ipynb) : interacting with DESI pipeline and redshift data in
