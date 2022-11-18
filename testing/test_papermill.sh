@@ -29,9 +29,12 @@ do
 
 done < list_notebooks.tmp
 
+sed 's/<a href=\\\"\#papermill-error-cell\\\">//g' auto_test.html | sed 's/<\/a>//g' > auto_test_2.html
+
 # clean up
+rm auto_test.html
 rm list_notebooks.tmp
 rm test_auto_output.ipynb
-
+mv auto_test_2.html auto_test.html
 
 
