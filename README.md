@@ -89,15 +89,15 @@ Tutorials in this repository include
     * [spectro_nz.ipynb](onskydata/spectro_nz.ipynb): making an n(z) histogram from the spectro production zbest files.
     * [Intro_to_DESI_SV_spectra.ipynb](onskydata/Intro_to_DESI_SV_spectra.ipynb): working with real DESI data from minisv2
     * [EDR_Tutorial.ipynb](onskydata/EDR_Tutorial.ipynb): tutorial notebook to work with EDR data.
-
+    * [Spectroscopic Production Database tutorial](database/spectroscopic-production-database.ipynb): working with EDR data in a database.
 
 * archive
   * [archive/GFA_targets.ipynb](archive/GFA_targets.ipynb)
   * [archive/Intro_to_DESI_spectra.ipynb](archive/Intro_to_DESI_spectra.ipynb)
   * [archive/dc17a-truth.ipynb](archive/dc17a-truth.ipynb)
   * [archive/quickgen.ipynb](archive/quickgen.ipynb)
-  * [simulating-desi-spectra.ipynb](archive/simulating-desi-spectra.ipynb): how to simulate your own spectra
-  * [survey-simulations.ipynb](survey-simulations.ipynb): how to use "survey simulation" outputs
+  * [archive/simulating-desi-spectra.ipynb](archive/simulating-desi-spectra.ipynb): how to simulate your own spectra
+  * [archive/survey-simulations.ipynb](archive/survey-simulations.ipynb): how to use "survey simulation" outputs
 
 
 
