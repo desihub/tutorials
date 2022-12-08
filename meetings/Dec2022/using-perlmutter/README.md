@@ -324,7 +324,7 @@ We'll also try to ignore indirect parallelism in NumPy by setting `OMP_NUM_THREA
 
 ### Serial `for`-loop
 
-We can process are data serially (in order) using a Python `for`-loop like so: 
+We can process our data serially (in order) using a Python `for`-loop like so:
 
 ```python
 results = []
@@ -338,7 +338,7 @@ When we run this example, we measure a wall clock time of about 29 seconds (meas
 The progress bar reports a work rate of 5.21 iterations per second (192 msec per iteration) which roughly corresponds to the performance we measured earlier with nthreads=1.
 
 ```bash
-> OMP_NUM_THREADS=1
+> export OMP_NUM_THREADS=1
 > time python data-serial.py
 serial
 n=1000 ntasks=128
@@ -371,7 +371,7 @@ By spawning new Python processes, multiprocessing bypasses the GIL limitation th
 Let's run the implemention in `data-multiprocessing.py`. First, run this using a single process:
 
 ```bash
-> OMP_NUM_THREADS=1
+> export OMP_NUM_THREADS=1
 > time python data-multiprocessing.py --nproc 1
 multiprocessing
 n=1000 ntasks=128 nproc=1
@@ -387,7 +387,7 @@ The performance is similar to the previous example, perhaps a little slower due 
 Let's run this again increasing the number of processes:
 
 ```bash
-> OMP_NUM_THREADS=1
+> export OMP_NUM_THREADS=1
 > time python 1-multiprocessing.py --nproc 4
 multiprocessing
 n=1000 ntasks=128 nproc=4
