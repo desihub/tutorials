@@ -47,12 +47,13 @@ While most tutorials are compatible with the latest release (for instance, 23.1)
 This repository hosts a selection of tutorials, including:
 
 
-* Getting started
+* Getting started (`getting_started`)
   These tutorials are centered around the public data releases:
+  
   * [EDR_AnalyzeZcat.ipynb](getting_started/EDR_AnalyzeZcat.ipynb): This tutorial guides you through the process of flagging a unique set of primary (that is, optimal) spectra for a particular object in the EDR catalog and applying fundamental quality cuts. It showcases how to disaggregate the data in the combined catalog based on target type (BGS, LRG, etc.), survey (SV1, SV2, etc.), and the quantity of spectra per target. Additionally, it demonstrates how to extract and depict various spectra of the same target.
   * [intro_to_DESI_EDR_files.ipynb](getting_started/intro_to_DESI_EDR_files.ipynb): This tutorial offers an exploration into the DESI data file structure in the Early Data Release (EDR). It instructs you on how to access different files in the data release, retrieve all available spectra along with redshift information for a specific object, and eventually plot the "best" spectrum.
 
-* DESI meetings
+* DESI meetings (`meetings`)
     * DESI Meeting Dec 2020
       * Dec2020/LSS.ipynb
       * Dec2020/ML_TensorFlow/ML_TensorFlow.ipynb
@@ -69,7 +70,7 @@ This repository hosts a selection of tutorials, including:
       * Dec2021/Everest_Tutorial_Dec2021.ipynb
       * Dec2021/SpectroperfectionismExample.ipynb
 
-* Fiber assignment
+* Fiber assignment (`fiberassign`)
   * [FiberAssign.ipynb](fiberassign/FiberAssign.ipynb): fiber assignment basics
   * [FiberAssignDECaLS.ipynb](fiberassign/FiberAssignDECaLS.ipynb): use observational data from DR8 to prepare it for fiberassign
   * [FiberAssignMocks.ipynb](fiberassign/FiberAssignMocks.ipynb): Generate mock files from simulations to feed into fiberassign
@@ -77,7 +78,7 @@ This repository hosts a selection of tutorials, including:
   * [FiberAssignAlgorithms_Part2.ipynb](fiberassign/FiberAssignAlgorithms_Part2.ipynb): fiberassign with multiple survey passes
   * fiberassign/restrict_reach.ipynb
  
-* Redrock
+* Redrock (`redrock`)
   * [RedrockBOSSDemo.ipynb](redrock/RedrockBOSSDemo.ipynb)
   * [RedrockNthBestFit.ipynb](redrock/RedrockNthBestFit.ipynb): How to look up the Nth best redrock fit coefficients. 
   * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
@@ -86,7 +87,7 @@ This repository hosts a selection of tutorials, including:
     a database (work in progress).
   
   
-* On sky data:
+* On sky data (`onskydata`):
     * [spectro_completeness.ipynb](onskydata/spectro_completeness.ipynb): computing spectroscopic completeness on DESI data. 
     * [spectro_nz.ipynb](onskydata/spectro_nz.ipynb): making an n(z) histogram from the spectro production zbest files.
     * [Intro_to_DESI_SV_spectra.ipynb](onskydata/Intro_to_DESI_SV_spectra.ipynb): working with real DESI data from minisv2
