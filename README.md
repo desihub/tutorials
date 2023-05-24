@@ -6,25 +6,28 @@ Welcome to the repository designed for tutorials that guide you through the proc
 * Tutorials designed around wide-ranging subjects (like onskydata) or specific packages (such as fiberassign, redrock).
 
 
-# Getting started
+# Environment setup
 
-The tutorials offered herein utilize a Jupyter server at NERSC. This facility enables users to access all DESI data at NERSC and work with pre-installed DESI code without necessitating any local downloads or installations.
+The tutorials presented here utilize a Jupyter server at NERSC. This facility enables users to access all DESI data at NERSC and work with pre-installed DESI code without necessitating any local downloads or installations.
 
-Please note, only the tutorials located under getting_started are designed to be compatible for non-DESI NERSC users. The remainder of the tutorials demand access to DESI's private data.
+Please note, only the tutorials located under `getting_started` are designed to be compatible for non-DESI NERSC users. The remainder of the tutorials demand access to DESI's private data.
 
-To commence, you will need to create a NERSC account. Follow the instructions detailed on the [DESI wiki](https://desi.lbl.gov/trac/wiki/Computing/AccessNersc), and subsequently log into perlmutter:
+To commence, you will need to create a NERSC account. DESI users can follow the instructions detailed on the [DESI wiki](https://desi.lbl.gov/trac/wiki/Computing/AccessNersc). 
+
+Once you have a NERSC account, you can proceed to log into Perlmutter:
 
 ```
 ssh perlmutter-p1.nersc.gov
 ```
 
-Jupyter "kernels" are critical in defining a specific set of code versions for use. To install DESI Jupyter kernels from perlmutter-p1.nersc.gov (this is a one-time requirement):
+Jupyter "kernels" are critical in defining a specific set of code versions for use. NERSC users can install DESI Jupyter kernels from perlmutter-p1.nersc.gov (this is a one-time requirement) using the following:
 
 ```
-source /global/cfs/cdirs/desi/software/desi_environment.sh 23.1
+source /global/common/software/desi/desi_environment.sh 23.1
 $DESIMODULES/install_jupyter_kernel.sh 23.1
 $DESIMODULES/install_jupyter_kernel.sh main
 ```
+
 
 To procure a copy of the tutorials on cori.nersc.gov, execute:
 
