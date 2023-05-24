@@ -1,54 +1,56 @@
 # DESI tutorials
 
-This repository is for tutorials on simulating and working with DESI data.
-There are additional more detailed tutorials within many of the DESI code
-repositories; tutorials here are generally for:
+Welcome to the repository designed for tutorials that guide you through the process of simulating and handling DESI data. A host of detailed tutorials can also be found across various DESI code repositories. However, this particular space serves primarily as a platform for:
 
-* Tutorials presented at a specific DESI meeting, grouped under a dated directory. e.g. meetings/Dec2020.
-* Tutorials on broad topics (onskydata) or packages (fiberassign, redrock). 
+* Tutorials that were demonstrated at specific DESI meetings, each segregated under directories marked by the date of the meeting. For example, meetings/Dec2020.
+* Tutorials designed around wide-ranging subjects (like onskydata) or specific packages (such as fiberassign, redrock).
+
 
 # Getting started
 
-These tutorials use a Jupyter server at NERSC, which provides pre-installed DESI code and access to all DESI data at NERSC without having to download or install anything locally.
+The tutorials offered herein utilize a Jupyter server at NERSC. This facility enables users to access all DESI data at NERSC and work with pre-installed DESI code without necessitating any local downloads or installations.
 
-First, get a NERSC account following the instructions on the [DESI wiki](https://desi.lbl.gov/trac/wiki/Computing/AccessNersc). Then login to cori:
-```
-ssh cori.nersc.gov
-```
+Please note, only the tutorials located under getting_started are designed to be compatible for non-DESI NERSC users. The remainder of the tutorials demand access to DESI's private data.
 
-Jupyter "kernels" define a specific set of code versions to use.  To install
-DESI jupyter kernels from cori.nersc.gov (you only need to do this once):
+To commence, you will need to create a NERSC account. Follow the instructions detailed on the [DESI wiki](https://desi.lbl.gov/trac/wiki/Computing/AccessNersc), and subsequently log into perlmutter:
+
 ```
-source /project/projectdirs/desi/software/desi_environment.sh 22.2
-$DESIMODULES/install_jupyter_kernel.sh 22.2
-$DESIMODULES/install_jupyter_kernel.sh master
+ssh perlmutter-p1.nersc.gov
 ```
 
-Get a copy of the tutorials on cori.nersc.gov:
+Jupyter "kernels" are critical in defining a specific set of code versions for use. To install DESI Jupyter kernels from perlmutter-p1.nersc.gov (this is a one-time requirement):
+
+```
+source /global/cfs/cdirs/desi/software/desi_environment.sh 23.1
+$DESIMODULES/install_jupyter_kernel.sh 23.1
+$DESIMODULES/install_jupyter_kernel.sh main
+```
+
+To procure a copy of the tutorials on cori.nersc.gov, execute:
+
 ```
 mkdir -p $HOME/desi/git
 cd $HOME/desi/git
 git clone https://github.com/desihub/tutorials
 ```
 
-Login at https://jupyter.nersc.gov and enter your credentials and OTP (One Time Password).
-Then, click on the Cori Shared CPU Node "Start" button.
-In the file browser on the left, navigate to wherever you cloned the
-tutorials repository.  (`$HOME/desi/git/tutorials` in the above commands).
-Click on a tutorial to try it out.
+Navigate to https://jupyter.nersc.gov and sign in using your credentials and OTP (One Time Password).
+Then, select the Perlmutter Shared CPU Node "Start" button.
+Using the file browser on the left, navigate to the location where you cloned the tutorials repository. ($HOME/desi/git/tutorials in the above commands). Select a tutorial to begin your journey.
 
-If you click on a tutorial and it prompts you to "Select Kernel" from a drop down list, it
-means that the default tutorial kernel in GitHub isn't one of the ones that you have already
-installed and it is asking you to select from one of the kernels that you do have installed.
-In most cases the tutorials will work with the latest release (e.g. 22.2) and
-the "master" release (updated nightly, name to switch to "main" in 2021).  Otherwise the
-text at the top of the tutorial will tell you which release is needed.  Go back to
-cori.nersc.gov, run "$DESIMODULES/install_jupyter_kernel.sh VERSION" for the required version,
-and reload the Jupyter page.
+If clicking on a tutorial prompts a "Select Kernel" option from a dropdown list, it indicates that the default tutorial kernel on GitHub is not among the kernels already installed on your system. The system is thus asking you to choose from the kernels you do have installed.
+While most tutorials are compatible with the latest release (for instance, 23.1) and the "main" release (updated nightly), some tutorials may require a specific release, which will be indicated at the top of the tutorial. If this is the case, return to perlmutter-p1.nersc.gov, run "$DESIMODULES/install_jupyter_kernel.sh VERSION" for the necessary version, and refresh the Jupyter page.
+
 
 # Menu of tutorials
 
-Tutorials in this repository include
+This repository hosts a selection of tutorials, including:
+
+
+* Getting started
+  These tutorials are centered around the public data releases:
+  * [EDR_AnalyzeZcat.ipynb](getting_started/EDR_AnalyzeZcat.ipynb): This tutorial guides you through the process of flagging a unique set of primary (that is, optimal) spectra for a particular object in the EDR catalog and applying fundamental quality cuts. It showcases how to disaggregate the data in the combined catalog based on target type (BGS, LRG, etc.), survey (SV1, SV2, etc.), and the quantity of spectra per target. Additionally, it demonstrates how to extract and depict various spectra of the same target.
+  * [intro_to_DESI_EDR_files.ipynb](getting_started/intro_to_DESI_EDR_files.ipynb): This tutorial offers an exploration into the DESI data file structure in the Early Data Release (EDR). It instructs you on how to access different files in the data release, retrieve all available spectra along with redshift information for a specific object, and eventually plot the "best" spectrum.
 
 * DESI meetings
     * DESI Meeting Dec 2020
