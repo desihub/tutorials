@@ -20,13 +20,10 @@ Once you have a NERSC account, you can proceed to log into Perlmutter:
 ssh perlmutter-p1.nersc.gov
 ```
 
-Jupyter "kernels" are critical in defining a specific set of code versions for use. NERSC users can install DESI Jupyter kernels from perlmutter-p1.nersc.gov (this is a one-time requirement) using the following:
+The role of Jupyter "kernels" is fundamental as they establish a specific set of code versions for utilization. For those who are part of the DESI collaboration, detailed guidance can be found on the [collaboration wiki](https://desi.lbl.gov/trac/wiki/Computing/JupyterAtNERSC).
 
-```
-source /global/common/software/desi/desi_environment.sh 23.1
-$DESIMODULES/install_jupyter_kernel.sh 23.1
-$DESIMODULES/install_jupyter_kernel.sh 22.5
-```
+If you're not affiliated with the DESI collaboration, please refer to the [instructions provided in this repository](https://github.com/desihub/tutorials/blob/main/getting_started/installing_EDR_kernels_at_NERSC.md) for further guidance.
+
 
 To procure a copy of the tutorials on perlmutter.nersc.gov, execute:
 
