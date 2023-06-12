@@ -5,6 +5,8 @@ Welcome to the repository designed for tutorials that guide you through the proc
 * Tutorials that were demonstrated at specific DESI meetings, each segregated under directories marked by the date of the meeting. For example, meetings/Dec2020.
 * Tutorials designed around wide-ranging subjects (like onskydata) or specific packages (such as fiberassign, redrock).
 
+## Table of Contents
+- [Menu of Tutorials](#Menu-of-Tutorials)
 
 # Environment setup
 
