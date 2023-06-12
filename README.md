@@ -123,7 +123,9 @@ Tutorials hosted in other packages include (but haven't been recently vetted):
 * [How to make all-sky plots](https://github.com/desihub/desiutil/blob/master/doc/nb/SkyMapExamples.ipynb)
 * [Working with DESI target bits (Main, CMX, SV)](https://github.com/desihub/desitarget/blob/master/doc/nb/target-selection-bits-and-bitmasks.ipynb)
 
-# External database services
+# External databases
+
+In addition to the database access through NERSC, one can use the following external database services.
 
 ## Astro Data Lab
 
@@ -140,7 +142,7 @@ and on the DESI Data Documentation [Database page](https://data.desi.lbl.gov/doc
 
 The [SPectra Analysis & Retrievable Catalog Lab (SPARCL)](https://astrosparcl.datalab.noirlab.edu) contains 
 DESI EDR spectra that were coadded per healpix. It is a searchable database that can be used via the Astro Data Lab 
-JupyterLab Notebook. The Python client can be installed locally by following these instructions:
+JupyterLab Notebook. Alternatively, the Python client can be installed locally using:
 ```
 pip install sparclclient
 ```
