@@ -150,8 +150,7 @@ The client can be loaded within a Python session or program via:
 >> client = SparclClient()
 ```
 
-There are also instructions and useful examples in the following  
-[How-to-use-SPARCL tutorial notebook](https://github.com/astro-datalab/notebooks-latest/blob/master/04_HowTos/SPARCL/How_to_use_SPARCL.ipynb).
+There are instructions and useful examples in the [How-to-use-SPARCL tutorial notebook](https://github.com/astro-datalab/notebooks-latest/blob/master/04_HowTos/SPARCL/How_to_use_SPARCL.ipynb).
 
 # Acknowledgments
 
