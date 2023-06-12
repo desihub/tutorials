@@ -5,8 +5,13 @@ Welcome to the repository designed for tutorials that guide you through the proc
 * Tutorials that were demonstrated at specific DESI meetings, each segregated under directories marked by the date of the meeting. For example, meetings/Dec2020.
 * Tutorials designed around wide-ranging subjects (like onskydata) or specific packages (such as fiberassign, redrock).
 
-## Table of Contents
-- [Menu of Tutorials](#Menu-of-Tutorials)
+### Table of Content
+- [Environment setup](#Environment-setup) at NERSC
+- [Menu of tutorials](#Menu-of-tutorials): main DESI tutorials (primarily with a NERSC account)
+- [Other tutorials](#Other-tutorials): legacy tutorials (some may be deprecated)
+- [External databases: Astro Data Lab and SPARCL](#External-databases): access to external databases without a NERSC account
+- [Acknowledgments](#Acknowledgments): for DESI data licence and official acknowledgments
+- [For authors of tutorials](#For-authors-of-tutorials)
 
 # Environment setup
 
@@ -117,6 +122,30 @@ Tutorials hosted in other packages include (but haven't been recently vetted):
 * [How to run quicksurvey catalog-level simulations](https://github.com/desihub/quicksurvey_example)
 * [How to make all-sky plots](https://github.com/desihub/desiutil/blob/master/doc/nb/SkyMapExamples.ipynb)
 * [Working with DESI target bits (Main, CMX, SV)](https://github.com/desihub/desitarget/blob/master/doc/nb/target-selection-bits-and-bitmasks.ipynb)
+
+# External database services
+
+## Astro Data Lab
+
+The Astro Data Lab serves a copy of the DESI EDR database as `desi_edr`. This is accessible to users without a NERSC account. 
+Various modes of data access are described [here](https://datalab.noirlab.edu/desi/access.php). 
+In particular, there is a Table Access Protocol (TAP) handle that provides a convenient access layer for the 
+DESI catalog database tables. TAP-aware clients (such as TOPCAT) can point to `https://datalab.noirlab.edu/tap`, 
+select the `desi_edr` database, and see the database tables and descriptions. 
+
+Descriptions of the associated tables can also be found in the Data Lab [table browser](https://datalab.noirlab.edu/query.php?name=desi_edr.zpix) 
+and on the DESI Data Documentation [Database page](https://data.desi.lbl.gov/doc/access/database/). 
+
+## SPARCL
+
+The [SPectra Analysis & Retrievable Catalog Lab (SPARCL)](https://astrosparcl.datalab.noirlab.edu) contains 
+DESI EDR spectra that were coadded per healpix. It is a searchable database that can be used via the Astro Data Lab 
+JupyterLab Notebook or can be installed locally by following the instructions on the SPARCL website or from the 
+[How-to-use-SPARCL tutorial notebook](https://github.com/astro-datalab/notebooks-latest/blob/master/04_HowTos/SPARCL/How_to_use_SPARCL.ipynb).
+
+# Acknowledgments
+
+Any use of DESI data whether via NERSC or external databases requires [DESI Data Acknowledgments](https://data.desi.lbl.gov/doc/acknowledgements/).
 
 # For authors of tutorials
 
