@@ -140,7 +140,17 @@ and on the DESI Data Documentation [Database page](https://data.desi.lbl.gov/doc
 
 The [SPectra Analysis & Retrievable Catalog Lab (SPARCL)](https://astrosparcl.datalab.noirlab.edu) contains 
 DESI EDR spectra that were coadded per healpix. It is a searchable database that can be used via the Astro Data Lab 
-JupyterLab Notebook or can be installed locally by following the instructions on the SPARCL website or from the 
+JupyterLab Notebook. The Python client can be installed locally by following these instructions:
+```
+pip install sparclclient
+```
+The client can be loaded within a Python session or program via:
+```
+>> from sparcl.client import SparclClient 
+>> client = SparclClient()
+```
+
+There are also instructions and useful examples in the following  
 [How-to-use-SPARCL tutorial notebook](https://github.com/astro-datalab/notebooks-latest/blob/master/04_HowTos/SPARCL/How_to_use_SPARCL.ipynb).
 
 # Acknowledgments
