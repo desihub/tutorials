@@ -148,8 +148,8 @@ pip install sparclclient
 ```
 The client can be loaded within a Python session or program via:
 ```
->> from sparcl.client import SparclClient 
->> client = SparclClient()
+>>> from sparcl.client import SparclClient 
+>>> client = SparclClient()
 ```
 
 There are instructions and useful examples in the [How-to-use-SPARCL tutorial notebook](https://github.com/astro-datalab/notebooks-latest/blob/master/04_HowTos/SPARCL/How_to_use_SPARCL.ipynb).
