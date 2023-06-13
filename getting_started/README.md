@@ -3,8 +3,8 @@
 Welcome to the DESI Getting Started tutorials!
 
 In addition to tutorial Jupyter Notebooks, this folder includes the following:
-- [Instructions for installing DESI Jupyter kernels at NERSC](getting_started/installing_EDR_kernels_at_NERSC.md)
-- [Links to reproduce figures from the EDR Overview paper](getting_started/figures_from_EDR_paper.md)
+- [Instructions for installing DESI Jupyter kernels at NERSC](installing_EDR_kernels_at_NERSC.md)
+- [Links to reproduce figures from the EDR Overview paper](figures_from_EDR_paper.md)
 
 ## Other useful references
 
