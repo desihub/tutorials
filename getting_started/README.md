@@ -14,7 +14,7 @@ The [DESI Data Documentation](https://data.desi.lbl.gov/doc/) website describes 
 
 ### DESI Helpdesk
 
-If you have a question, please visit the [DESI User Forum](https://help.desi.lbl.gov)
+If you have a question, please visit the [DESI User Forum](https://help.desi.lbl.gov).
 
 ## Tutorials and data at NOIRLab
 
