@@ -24,7 +24,7 @@ To commence, you will need to create a NERSC account. DESI users can follow the 
 Once you have a NERSC account, you can proceed to log into Perlmutter:
 
 ```
-ssh perlmutter-p1.nersc.gov
+ssh perlmutter.nersc.gov
 ```
 
 The role of Jupyter "kernels" is fundamental as they establish a specific set of code versions for utilization. For those who are part of the DESI collaboration, detailed guidance can be found on the [collaboration wiki](https://desi.lbl.gov/trac/wiki/Computing/JupyterAtNERSC).
@@ -45,7 +45,14 @@ Then, select the Perlmutter Shared CPU Node "Start" button.
 Using the file browser on the left, navigate to the location where you cloned the tutorials repository. ($HOME/desi/git/tutorials in the above commands). Select a tutorial to begin your journey.
 
 If clicking on a tutorial prompts a "Select Kernel" option from a dropdown list, it indicates that the default tutorial kernel on GitHub is not among the kernels already installed on your system. The system is thus asking you to choose from the kernels you do have installed.
-While most tutorials are compatible with the latest release (for instance, 23.1), some tutorials may require a specific release, which will be indicated at the top of the tutorial. If this is the case, return to perlmutter-p1.nersc.gov, run "$DESIMODULES/install_jupyter_kernel.sh VERSION" for the necessary version, and refresh the Jupyter page.
+While most tutorials are compatible with the latest release (for instance, 23.1), some tutorials may require a specific release, which will be indicated at the top of the tutorial. If this is the case, return to perlmutter.nersc.gov, run
+
+```
+source $CFS/desi/software/desi_environment.sh main
+$DESIMODULES/install_jupyter_kernel.sh VERSION
+```
+
+for the necessary VERSION, and refresh the Jupyter page.
 
 # Menu of tutorials
 

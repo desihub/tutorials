@@ -22,7 +22,7 @@ For NERSC users who are not part of the DESI collaboration, please follow the st
     mkdir -p ~/.local/share/jupyter/kernels
     cp -R /global/common/software/desi/kernels/desi-edr-23.1-bash ~/.local/share/jupyter/kernels
     ```
-    This step will install the DESI EDR 23.1 kernel. Other available kernels are `desi-22.5`, ``desi-23.1` and `desi-main`, 
+    This step will install the DESI EDR 23.1 kernel. Other available kernels are `desi-22.5`, `desi-23.1` and `desi-main`,
 
 5. Access https://jupyter.nersc.gov/hub/login and initiate a "Perlmutter" server (Note: Do not start a "Spin" server).
 
