@@ -62,12 +62,13 @@ This repository hosts a selection of tutorials, including:
 * Getting started (`getting_started`)
   These tutorials are centered around the public data releases:
   
-  * [EDR_AnalyzeZcat.ipynb](getting_started/EDR_AnalyzeZcat.ipynb): This tutorial guides you through the process of flagging a unique set of primary (that is, optimal) spectra for a particular object in the EDR catalog and applying fundamental quality cuts. It showcases how to disaggregate the data in the combined catalog based on target type (BGS, LRG, etc.), survey (SV1, SV2, etc.), and the quantity of spectra per target. Additionally, it demonstrates how to extract and depict various spectra of the same target.
-  * [intro_to_DESI_EDR_files.ipynb](getting_started/intro_to_DESI_EDR_files.ipynb): This tutorial offers an exploration into the DESI data file structure in the Early Data Release (EDR). It instructs you on how to access different files in the data release, retrieve all available spectra along with redshift information for a specific object, and eventually plot the "best" spectrum.
+  * [AnalyzeZcat.ipynb](getting_started/AnalyzeZcat.ipynb): This tutorial guides you through the process of flagging a unique set of primary (that is, optimal) spectra for a particular object in the DR1 catalog and applying fundamental quality cuts. It showcases how to disaggregate the data in the combined catalog based on target type (BGS, LRG, etc.) and the quantity of spectra per target. Additionally, it demonstrates how to extract and depict various spectra of the same target.
+  * [intro_to_DESI_files.ipynb](getting_started/intro_to_DESI_files.ipynb): This tutorial offers an exploration into the DESI data file structure in the Data Release 1 (DR1). It instructs you on how to access different files in the data release, retrieve all available spectra along with redshift information for a specific object, and eventually plot the "best" spectrum.
   * [DESI_petal_healpix_rosette.ipynb](getting_started/DESI_petal_healpix_rosette.ipynb): This tutorial provides a visualization of the fiber positions and how they are divided into petals. Additionally, it illustrates an example rosette (Rosette 1; Figure 5 from [DESI Collaboration et al. 2023b](https://ui.adsabs.harvard.edu/abs/2023arXiv230606308D/abstract)) and how the fibers positions as divided into HEALPixels, which are used to arrange the data in small regions with equal sky areas.
   * [SubselectSpectra.ipynb](getting_started/SubselectSpectra.ipynb): This tutorial demonstrates how to use **desispec** to select and save a targeted subset of DESI spectra for more efficient analysis. It covers reading, sub-selecting, combining, and writing spectra to a file, along with catalog association techniques for easy data management.
+  * [figures_from_DR1_paper.md](getting_started/figures_from_DR1_paper.md): Links to the relevant files to replicate the primary figures featured in the Data Release 1 paper.
   * [figures_from_EDR_paper.md](getting_started/figures_from_EDR_paper.md): Links to the relevant files to replicate the primary figures featured in the Early Data Release paper.
-  * [installing_EDR_kernels_at_NERSC.md](getting_started/installing_EDR_kernels_at_NERSC.md)
+  * [installing_kernels_at_NERSC.md](getting_started/installing_EDR_kernels_at_NERSC.md)
 
 * DESI meetings (`meetings`)
     * DESI Meeting Dec 2020
