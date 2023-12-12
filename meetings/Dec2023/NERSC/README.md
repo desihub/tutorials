@@ -88,7 +88,7 @@ Hint: See tutorial slides 14-15.
 
 Which parallelism method ran fastest?  Which did you find easiest to implement?
 
-## Exercise 2: Tuning parallism
+## Exercise 2: Tuning parallelism
 
 In this exercise we'll study the tradeoffs on different levels of parallelism,
 using MPI + multiprocessing.
