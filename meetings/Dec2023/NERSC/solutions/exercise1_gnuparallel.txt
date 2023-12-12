@@ -1,0 +1,4 @@
+# to run exercise1.py using gnu parallel:
+
+module load parallel
+cat coaddfiles.txt | time parallel python exercise1.py {}
