@@ -73,7 +73,7 @@ Hint: See tutorial slides 9-11.
 Bonus: did you try parallelizing over files or over spectra within a file?
 Try implementing the other form of parallelism.  Which was faster?
 
-### Exercise 1b: MPI
+### Exercise 1c: MPI
 
 Make a copy of exercise1.py and update it to use MPI.  This would be run with an
 `srun` prefix like:
