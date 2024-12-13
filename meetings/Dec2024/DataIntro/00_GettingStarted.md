@@ -4,6 +4,9 @@ Stephen Bailey<br/>
 DESI Cancun Meeting December 2024<br/>
 ECS Tutorial
 
+*Parts of this tutorial are adapted from the [intro_to_DESI_EDR_files](https://github.com/desihub/tutorials/blob/main/getting_started/intro_to_DESI_EDR_files.ipynb) tutorial originally developed by
+Ragadeepika Pucha (U.Arizona), Anthony Kremin (Berkeley Lab), Stéphanie Juneau (NOIRLab), Jaime E. Forero-Romero (Uniandes), and DESI Data Team*
+
 ## Goals
 
 This tutorial covers the following topics covering a range of expertise
@@ -22,7 +25,7 @@ This tutorial covers the following topics covering a range of expertise
 
 All of these tutorials can be read at https://github.com/desihub/tutorials/tree/main/meetings/Dec2024/DataIntro .  If you want to interact with them and explore some more, you can run the notebooks using https://jupyter.nersc.gov, but you'll need to setup the DESI kernels first so that your Jupyter notebook can find the DESI code.
 
-Open a terminal (either from Jupyter File -> New -> Console or `ssh perlmutter.nersc.gov`) and run the following commands
+Open a terminal (either from Jupyter File -> New -> Terminal or `ssh perlmutter.nersc.gov`) and run the following commands
 
 ```
 source /global/common/software/desi/desi_environment.sh 24.11
@@ -47,7 +50,7 @@ laptop using https://data.desi.lbl.gov/desi/users/ .
 
 ## Starting jupyter.nersc.gov
 
-Browse to jupyter.nersc.gov and login with your NERSC credentials.
+Browse to https://jupyter.nersc.gov and login with your NERSC credentials.
 
 Start a Perlmutter Login Node server (leftmost option).
 
