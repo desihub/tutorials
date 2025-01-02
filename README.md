@@ -108,7 +108,7 @@ This repository hosts a selection of tutorials, including:
     * [spectro_completeness.ipynb](onskydata/spectro_completeness.ipynb): computing spectroscopic completeness on DESI data. 
     * [spectro_nz.ipynb](onskydata/spectro_nz.ipynb): making an n(z) histogram from the spectro production zbest files.
     * [Intro_to_DESI_SV_spectra.ipynb](onskydata/Intro_to_DESI_SV_spectra.ipynb): working with real DESI data from minisv2
-    * [Spectroscopic Production Database tutorial](database/spectroscopic-production-database.ipynb): working with EDR data in a database.
+    * [Spectroscopic Production Database Tutorial](database/spectroscopic-production-database.ipynb): working with EDR data in a database.
 
 * archive
   * [archive/GFA_targets.ipynb](archive/GFA_targets.ipynb)
