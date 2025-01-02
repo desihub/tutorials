@@ -64,11 +64,11 @@ This repository hosts a selection of tutorials, including:
   
   * [AnalyzeZcat.ipynb](getting_started/AnalyzeZcat.ipynb): This tutorial guides you through the process of flagging a unique set of primary (that is, optimal) spectra for a particular object in the DR1 catalog and applying fundamental quality cuts. It showcases how to disaggregate the data in the combined catalog based on target type (BGS, LRG, etc.) and the quantity of spectra per target. Additionally, it demonstrates how to extract and depict various spectra of the same target.
   * [intro_to_DESI_files.ipynb](getting_started/intro_to_DESI_files.ipynb): This tutorial offers an exploration into the DESI data file structure in the Data Release 1 (DR1). It instructs you on how to access different files in the data release, retrieve all available spectra along with redshift information for a specific object, and eventually plot the "best" spectrum.
-  * [DESI_petal_healpix_rosette.ipynb](getting_started/DESI_petal_healpix_rosette.ipynb): This tutorial provides a visualization of the fiber positions and how they are divided into petals. Additionally, it illustrates an example rosette (Rosette 1; Figure 5 from [DESI Collaboration et al. 2023b](https://ui.adsabs.harvard.edu/abs/2023arXiv230606308D/abstract)) and how the fibers positions as divided into HEALPixels, which are used to arrange the data in small regions with equal sky areas.
   * [SubselectSpectra.ipynb](getting_started/SubselectSpectra.ipynb): This tutorial demonstrates how to use **desispec** to select and save a targeted subset of DESI spectra for more efficient analysis. It covers reading, sub-selecting, combining, and writing spectra to a file, along with catalog association techniques for easy data management.
-  * [figures_from_DR1_paper.md](getting_started/figures_from_DR1_paper.md): Links to the relevant files to replicate the primary figures featured in the Data Release 1 paper.
-  * [figures_from_EDR_paper.md](getting_started/figures_from_EDR_paper.md): Links to the relevant files to replicate the primary figures featured in the Early Data Release paper.
-  * [installing_kernels_at_NERSC.md](getting_started/installing_EDR_kernels_at_NERSC.md)
+  * [DESI_petal_healpix_rosette.ipynb](getting_started/EDR/DESI_petal_healpix_rosette.ipynb): This tutorial provides a visualization of the fiber positions and how they are divided into petals. Additionally, it illustrates an example rosette (Rosette 1; Figure 5 from [DESI Collaboration et al. 2023b](https://ui.adsabs.harvard.edu/abs/2023arXiv230606308D/abstract)) and how the fibers positions as divided into HEALPixels, which are used to arrange the data in small regions with equal sky areas.
+  * [figures_from_DR1_paper.md](getting_started/DR1/figures_from_DR1_paper.md): Links to the relevant files to replicate the primary figures featured in the Data Release 1 paper.
+  * [figures_from_EDR_paper.md](getting_started/EDR/figures_from_EDR_paper.md): Links to the relevant files to replicate the primary figures featured in the Early Data Release paper.
+  * [installing_kernels_at_NERSC.md](getting_started/EDR/installing_EDR_kernels_at_NERSC.md)
 
 * DESI meetings (`meetings`)
     * DESI Meeting Dec 2020
@@ -100,7 +100,7 @@ This repository hosts a selection of tutorials, including:
   * [RedrockNthBestFit.ipynb](redrock/RedrockNthBestFit.ipynb): How to look up the Nth best redrock fit coefficients. 
   * [RedrockOutputs.ipynb](redrock/RedrockOutputs.ipynb): Understanding redrock outputs and
     connecting the coefficients to template spectra.
-  * [redshift-database.ipynb](redrock/redshift-database.ipynb) : interacting with DESI pipeline and redshift data in
+  * [redshift-database.ipynb](database/spectroscopic-production-database.ipynb) : interacting with DESI pipeline and redshift data in
     a database (work in progress).
   
   
@@ -108,7 +108,6 @@ This repository hosts a selection of tutorials, including:
     * [spectro_completeness.ipynb](onskydata/spectro_completeness.ipynb): computing spectroscopic completeness on DESI data. 
     * [spectro_nz.ipynb](onskydata/spectro_nz.ipynb): making an n(z) histogram from the spectro production zbest files.
     * [Intro_to_DESI_SV_spectra.ipynb](onskydata/Intro_to_DESI_SV_spectra.ipynb): working with real DESI data from minisv2
-    * [EDR_Tutorial.ipynb](onskydata/EDR_Tutorial.ipynb): tutorial notebook to work with EDR data.
     * [Spectroscopic Production Database tutorial](database/spectroscopic-production-database.ipynb): working with EDR data in a database.
 
 * archive
