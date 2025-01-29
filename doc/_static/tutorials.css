@@ -1,0 +1,22 @@
+/*
+ * Highlight color for different types of tables.
+ * In the standard theme (abbreviating):
+ * .row-even td { background-color: #f3f6f6; (243, 246, 246) }
+ * .row-odd td { background-color: transparent; }
+ * The background color of the content div is #fcfcfc (252, 252, 252).
+ * The highly specific selectors below are needed to override the default settings.
+ */
+/*
+ * Older versions of Sphinx.
+ */
+.section .wy-table-responsive table.keywords tbody tr.row-even td { background-color: rgb(223, 226, 246); }
+.section .wy-table-responsive table.keywords tbody tr.row-odd td { background-color: rgb(232, 232, 252); }
+.section .wy-table-responsive table.columns tbody tr.row-even td { background-color: rgb(223, 246, 226); }
+.section .wy-table-responsive table.columns tbody tr.row-odd td { background-color: rgb(232, 252, 232); }
+/*
+ * Sphinx 4.5.x
+ */
+section details.summary-required-header-keywords-table div.wy-table-responsive table.keywords tbody tr.row-even td { background-color: rgb(223, 226, 246); }
+section details.summary-required-header-keywords-table div.wy-table-responsive table.keywords tbody tr.row-odd td { background-color: rgb(232, 232, 252); }
+section section div.wy-table-responsive table.columns tbody tr.row-even td { background-color: rgb(223, 246, 226); }
+section section div.wy-table-responsive table.columns tbody tr.row-odd td { background-color: rgb(232, 252, 232); }

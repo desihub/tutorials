@@ -1,0 +1,2 @@
+sphinx-toolbox
+sphinx-rtd-theme>1.2
