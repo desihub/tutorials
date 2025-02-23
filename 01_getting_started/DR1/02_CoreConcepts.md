@@ -3,6 +3,9 @@
 This tutorial briefly introduces a few key concepts in DESI.
 Understanding these will help you understand the other tutorials more easily.
 
+If you are viewing this file from within a jupyter server,
+right click and select "Show Markdown Preview" to see a formatted version.
+
 ## SURVEY and PROGRAM
 
 DESI observations are organized by
