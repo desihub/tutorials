@@ -47,7 +47,8 @@ with a set of 3rd party libraries, plus some DESI code and example data.
 
     ```
     git clone https://github.com/desihub/tutorials
-    cd tutorials/01_getting_started
+    cd tutorials
+    git checkout dr1   # TODO: not needed after DR1 becomes public
     jupyter lab .
     ```
 
@@ -55,49 +56,32 @@ with a set of 3rd party libraries, plus some DESI code and example data.
     This can be fixed under Settings -> Settings Editor -> Notebook -> Windowing mode
     (near bottom) -> set to "defer"
 
-8. Proceed with the `01_QuickStart.ipynb` tutorial in the left panel.
+8. Proceed with the `01_getting_tarted/01_QuickStart.ipynb` tutorial in the left panel.
 
 
 ## Running the tutorials at NERSC
-
-**DESI Collaborators**: install the DESI "main" kernel described at https://desi.lbl.gov/trac/wiki/Computing/JupyterAtNERSC.
-
-**TODO**: the remaining instructions for non-DESI NERSC accounts don't work yet.
 
 If you have access to [NERSC](https://nersc.gov), e.g. through DESI, DES, LSST-DESC, CMB-S4, etc.,
 you can run the tutorials at https://juypter.nersc.gov and have access to the full public DESI data.
 To do this, you will need to install a "Jupyter kernel" that tells it where to find the pre-installed
 DESI code.
 
-* **TODO**: make a newer set of tags to use with DR1 data
-* **TODO**: These instructions for non-DESI collaborator usage at NERSC don't work yet due to missing kernels, lack of desitree/dr1 module, and possibly other issues.
-
-1. Log into perlmutter.nersc.gov and set up the DESI code environment pointing to the publicly accessible DR1 location using the following commands:
+1. Log into perlmutter.nersc.gov and install Jupyter kernel with DESI packages configured for DR1:
 
     ```
-    source /global/common/software/desi/desi_environment.sh main
-    module switch desitree/dr1
+    ssh perlmutter.nersc.gov
+    /global/common/software/desi/install_jupyter_kernel --software-version 24.11 --data-release dr1
+    
     ```
-    **TODO**: Make new software release with latest tags
 
-2. Determine your shell by using the command: `echo ${SHELL}`.
-
-3. Depending on your shell, select the appropriate kernel version:
-    * For /bin/bash, /bin/sh, or /bin/zsh, use the "bash" kernels. For example, `desi-dr1-23.1-bash`.
-    * For /bin/tcsh or /bin/csh, use the "tcsh" kernels. For example, `desi-dr1-23.1-tcsh`.
-
-4. Copy the chosen kernel to your home directory using the following command:
-    ```
-    mkdir -p ~/.local/share/jupyter/kernels
-    cp -R /global/common/software/desi/kernels/desi-dr1-23.1-bash ~/.local/share/jupyter/kernels
-    ```
-    This step will install the DESI DR1 23.1 kernel. Other available kernels are `desi-22.5`, `desi-23.1` and `desi-main`,
-
-5. Get a copy of these tutorials
+2. Get a copy of these tutorials
     ```
     git clone https://github.com/desihub/tutorials
+    cd tutorials
+    git checkout dr1
     ```
+    **TODO**: those last two lines will not be necessary once DR1 is public
 
-6. Login to https://jupyter.nersc.gov and navigate to the location where you cloned the tutorials.
+3. Login to https://jupyter.nersc.gov and navigate to the location where you cloned the tutorials.
    Start with `01_getting_started/DR1/01_QuickStart.ipynb`.
 
