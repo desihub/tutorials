@@ -1,13 +1,13 @@
 # DESI tutorials
 
-Welcome to the repository designed for tutorials that guide you through the process of analyzing DESI data.
-We recommend starting with the tutorials under [01_getting_started/](01_getting_started/) and then explore additional
-topics under `02_digging_deeper/`.
+Welcome to the repository of tutorials to guide you through the process of analyzing DESI data.
+We recommend starting with the tutorials under [01_getting_started/](01_getting_started/)
+and then explore additional topics under [02_digging_deeper/](02_digging_deeper/).
 
 Other directories in this repository cover detailed topics and tutorials presented at DESI collaboration meetings; these are not actively maintained and may not work with the latest data and software releases.  Some tutorials require substantial amounts of data or are specific to the
 [NERSC](https://nersc.gov) computing center used by the DESI collaboration, but may still be useful to read even without NERSC access.
 
-See `01_getting_started/00_Setup.md` for instructions on installing the necessary Python libraries and downloading example data.
+See [01_getting_started/00_Setup.md](01_getting_started/00_Setup.md) for instructions on installing the necessary Python libraries and downloading example data.
 
 # Other tutorials and resources
 

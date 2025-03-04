@@ -11,9 +11,9 @@ with a set of 3rd party libraries, plus some DESI code and example data.
 2. Create a DESI environment with the required packages
 
     ```
-    conda create --name desitest 'numpy<2' scipy 'astropy<7' ipython jupyter \
+    conda create --name desi 'numpy<2' scipy 'astropy<7' ipython jupyter \
             matplotlib numba pytest fitsio h5py healpy requests
-    conda activate desitest
+    conda activate desi
     ```
 
 3. Install the DESI-specific packages
@@ -29,7 +29,7 @@ with a set of 3rd party libraries, plus some DESI code and example data.
 
 4. Download example DESI data
 
-    **TODO**: instructions for using `desi_download_dr1_subset` to download data without needing a NERSC account.
+    **TODO**: instructions for using `desi_get_dr1_subset` to download data without needing a NERSC account.
 
     In the meantime,
     ```
@@ -56,7 +56,7 @@ with a set of 3rd party libraries, plus some DESI code and example data.
     This can be fixed under Settings -> Settings Editor -> Notebook -> Windowing mode
     (near bottom) -> set to "defer"
 
-8. Proceed with the `01_getting_tarted/01_QuickStart.ipynb` tutorial in the left panel.
+8. Proceed with the [01_getting_started/01_QuickStart.ipynb](01_QuickStart.ipynb) tutorial in the left panel.
 
 
 ## Running the tutorials at NERSC

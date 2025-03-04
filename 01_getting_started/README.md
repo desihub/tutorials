@@ -8,7 +8,7 @@ The current set of tutorials is based upon DESI Data Release 1 (DR1) data.
 Previous tutorials for the Early Data Release (EDR) are archived under the
 [EDR/](./EDR) directory.
 
-Start with [00_Setup.md](./Setup) for initial software setup and how to access example data, then proceed with the other tutorials.
+Start with [00_Setup.md](./Setup.md) for initial software setup and how to access example data, then proceed with the other tutorials.
 
 ## Additional Resources
 
