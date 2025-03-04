@@ -1,7 +1,7 @@
 # DESI tutorials
 
 Welcome to the repository designed for tutorials that guide you through the process of analyzing DESI data.
-We recommend starting with the tutorials under `01_getting_started/` and then explore additional
+We recommend starting with the tutorials under [01_getting_started/](01_getting_started/) and then explore additional
 topics under `02_digging_deeper/`.
 
 Other directories in this repository cover detailed topics and tutorials presented at DESI collaboration meetings; these are not actively maintained and may not work with the latest data and software releases.  Some tutorials require substantial amounts of data or are specific to the
