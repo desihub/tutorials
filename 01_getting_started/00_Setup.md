@@ -29,14 +29,19 @@ with a set of 3rd party libraries, plus some DESI code and example data.
 
 4. Download example DESI data
 
-    **TODO**: instructions for using `desi_get_dr1_subset` to download data without needing a NERSC account.
+    ```
+    curl https://raw.githubusercontent.com/desihub/desida/refs/heads/tiny_dr1/bin/desi_get_dr_subset > desi_get_dr_subset
+    python desi_get_dr_subset
+    ```
 
-    In the meantime,
-    ```
-    scp -r dtn01.nersc.gov:/global/cfs/cdirs/desi/users/forero/tiny_dr1 .
-    scp -r dtn01.nersc.gov:/global/cfs/cdirs/desi/spectro/redux/iron/tiles-iron.csv tiny_dr1/spectro/redux/iron/
-    scp -r dtn01.nersc.gov:/global/cfs/cdirs/desi/spectro/redux/iron/exposures-iron.csv tiny_dr1/spectro/redux/iron/
-    ```
+    **NOTE**: if you don't have curl installed, you can also use wget or download `desi_get_dr_subset` using a web browser.
+
+    **NOTE**: even a "tiny" subset of DR1 is ~40 GB and can take an hour or more to download
+    even with a fast internet connection.  Once you have gotten past the
+    "Downloading files for healpix 23040..." step you can proceed with the tutorials
+    while the remaining tile-based data finish downloading
+    (needed for [03_DataOrganization.ipynb](03_DataOrganization.ipynb) and [05_Spectra.ipynb](05_Spectra.ipynb)
+    but not the others)
 
 6. Set `$DESI_ROOT` to the path where you just downloaded the data
 
@@ -71,7 +76,6 @@ DESI code.
     ```
     ssh perlmutter.nersc.gov
     /global/common/software/desi/install_jupyter_kernel --software-version 24.11 --data-release dr1
-    
     ```
 
 2. Get a copy of these tutorials
@@ -83,5 +87,5 @@ DESI code.
     **TODO**: those last two lines will not be necessary once DR1 is public
 
 3. Login to https://jupyter.nersc.gov and navigate to the location where you cloned the tutorials.
-   Start with `01_getting_started/DR1/01_QuickStart.ipynb`.
+   Start with [01_getting_started/01_QuickStart.ipynb](01_QuickStart.ipynb).
 

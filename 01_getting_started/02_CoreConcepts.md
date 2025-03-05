@@ -3,7 +3,7 @@
 This tutorial briefly introduces a few key concepts in DESI.
 Understanding these will help you understand the other tutorials more easily.
 
-If you are viewing this file from within a jupyter server,
+If you are viewing this file from within a Jupyter server,
 right click and select "Show Markdown Preview" to see a formatted version.
 
 ## SURVEY and PROGRAM
@@ -52,7 +52,7 @@ get those spectra.  For these reasons, data processing also groups spectra by
 **Why this matters**: If you want the highest S/N data combined across all observations, you want to use the healpix data.  If you need to track performance vs. time or are working with
 custom observations on a special tile, you want the tile data.
 
-**Digging Deeper**: The [DESI_petal_healpix_rosette](https://github.com/desihub/tutorials/blob/main/getting_started/DESI_petal_healpix_rosette.ipynb) tutorial explores these ideas in more detail including reading and plotting targets grouped by tiles vs. healpix.
+**Digging Deeper**: The [DESI_petal_healpix_rosette](EDR/DESI_petal_healpix_rosette.ipynb) tutorial explores these ideas in more detail including reading and plotting targets grouped by tiles vs. healpix.
 
 
 ## Petals, Spectrographs, Cameras, and Fibers
