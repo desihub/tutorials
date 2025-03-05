@@ -86,6 +86,16 @@ DESI code.
     ```
     **TODO**: those last two lines will not be necessary once DR1 is public
 
-3. Login to https://jupyter.nersc.gov and navigate to the location where you cloned the tutorials.
-   Start with [01_getting_started/01_QuickStart.ipynb](01_QuickStart.ipynb).
+3. Login to https://jupyter.nersc.gov, start a "Perlmutter Login Node" server,
+   and navigate to the location where you cloned the tutorials.
+
+4. Start with [01_getting_started/01_QuickStart.ipynb](01_QuickStart.ipynb).
+   For each tutorial, Kernel -> Change Kernel... (or click on the kernel name
+   in the upper right) and change the kernel to the "DESI 24.11 DR1" kernel
+   that you installed in step 1.
+
+**NOTE**: If you get an `ModuleNotFoundError` or `ImportError` when running these
+tutorials, you probably forgot to switch to a DESI kernel first.
+In that case, switch kernels and restart the notebook from the beginning.
+
 
