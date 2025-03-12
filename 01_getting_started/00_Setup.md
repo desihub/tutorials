@@ -30,7 +30,7 @@ with a set of 3rd party libraries, plus some DESI code and example data.
 4. Download example DESI data
 
     ```
-    curl https://raw.githubusercontent.com/desihub/desida/refs/heads/tiny_dr1/bin/desi_get_dr_subset > desi_get_dr_subset
+    curl https://raw.githubusercontent.com/desihub/desida/refs/heads/main/bin/desi_get_dr_subset > desi_get_dr_subset
     python desi_get_dr_subset
     ```
 
