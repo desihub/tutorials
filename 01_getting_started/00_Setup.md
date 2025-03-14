@@ -32,7 +32,7 @@ with a set of 3rd party libraries, plus some DESI code and example data.
     **NOTE**: if you previously ran those commands and want to update to the latest version of main,
     use `pip install --force-reinstall ...`
 
-5. Download example DESI data
+4. Download example DESI data
 
     ```
     curl https://raw.githubusercontent.com/desihub/desida/refs/heads/tiny_dr1/bin/desi_get_dr_subset > desi_get_dr_subset
@@ -48,12 +48,12 @@ with a set of 3rd party libraries, plus some DESI code and example data.
     (needed for [03_DataOrganization.ipynb](03_DataOrganization.ipynb) and [05_Spectra.ipynb](05_Spectra.ipynb)
     but not the others)
 
-6. Set `$DESI_ROOT` to the path where you just downloaded the data
+5. Set `$DESI_ROOT` to the path where you just downloaded the data
 
     * bash: `export DESI_ROOT=$PWD/tiny_dr1`
     * tcsh: `setenv DESI_ROOT $PWD/tiny_dr1`
 
-7. Get the tutorials and start Jupyter
+6. Get the tutorials and start Jupyter
 
     ```
     git clone https://github.com/desihub/tutorials
@@ -66,7 +66,7 @@ with a set of 3rd party libraries, plus some DESI code and example data.
     This can be fixed under Settings -> Settings Editor -> Notebook -> Windowing mode
     (near bottom) -> set to "defer"
 
-8. Proceed with the [01_getting_started/01_QuickStart.ipynb](01_QuickStart.ipynb) tutorial in the left panel.
+7. Proceed with the [01_getting_started/01_QuickStart.ipynb](01_QuickStart.ipynb) tutorial in the left panel.
 
 
 ## Running the tutorials at NERSC
