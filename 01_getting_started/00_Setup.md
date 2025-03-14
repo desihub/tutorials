@@ -19,15 +19,20 @@ with a set of 3rd party libraries, plus some DESI code and example data.
 3. Install the DESI-specific packages
 
     ```
-    pip install git+https://github.com/desihub/desiutil.git@main
-    pip install git+https://github.com/desihub/desitarget.git@main
-    pip install git+https://github.com/desihub/desispec.git@main
-    pip install git+https://github.com/desihub/desimodel.git@main
+    pip install git+https://github.com/desihub/desiutil@main
+    pip install git+https://github.com/desihub/desitarget@main
+    pip install git+https://github.com/desihub/desispec@main
+    pip install git+https://github.com/desihub/desimodel@main
     install_desimodel_data
+    pip install git+https://github.com/desihub/redrock@main
+    install_rerock_templates
     ```
     **TODO**: update those to a new set of tags.
 
-4. Download example DESI data
+    **NOTE**: if you previously ran those commands and want to update to the latest version of main,
+    use `pip install --force-reinstall ...`
+
+5. Download example DESI data
 
     ```
     curl https://raw.githubusercontent.com/desihub/desida/refs/heads/tiny_dr1/bin/desi_get_dr_subset > desi_get_dr_subset
