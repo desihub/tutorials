@@ -19,13 +19,18 @@ with a set of 3rd party libraries, plus some DESI code and example data.
 3. Install the DESI-specific packages
 
     ```
-    pip install git+https://github.com/desihub/desiutil.git@main
-    pip install git+https://github.com/desihub/desitarget.git@main
-    pip install git+https://github.com/desihub/desispec.git@main
-    pip install git+https://github.com/desihub/desimodel.git@main
+    pip install git+https://github.com/desihub/desiutil@main
+    pip install git+https://github.com/desihub/desitarget@main
+    pip install git+https://github.com/desihub/desispec@main
+    pip install git+https://github.com/desihub/desimodel@main
     install_desimodel_data
+    pip install git+https://github.com/desihub/redrock@main
+    install_rerock_templates
     ```
     **TODO**: update those to a new set of tags.
+
+    **NOTE**: if you previously ran those commands and want to update to the latest version of main,
+    use `pip install --force-reinstall ...`
 
 4. Download example DESI data
 
@@ -43,12 +48,12 @@ with a set of 3rd party libraries, plus some DESI code and example data.
     (needed for [03_DataOrganization.ipynb](03_DataOrganization.ipynb) and [05_Spectra.ipynb](05_Spectra.ipynb)
     but not the others)
 
-6. Set `$DESI_ROOT` to the path where you just downloaded the data
+5. Set `$DESI_ROOT` to the path where you just downloaded the data
 
     * bash: `export DESI_ROOT=$PWD/tiny_dr1`
     * tcsh: `setenv DESI_ROOT $PWD/tiny_dr1`
 
-7. Get the tutorials and start Jupyter
+6. Get the tutorials and start Jupyter
 
     ```
     git clone https://github.com/desihub/tutorials
@@ -61,7 +66,7 @@ with a set of 3rd party libraries, plus some DESI code and example data.
     This can be fixed under Settings -> Settings Editor -> Notebook -> Windowing mode
     (near bottom) -> set to "defer"
 
-8. Proceed with the [01_getting_started/01_QuickStart.ipynb](01_QuickStart.ipynb) tutorial in the left panel.
+7. Proceed with the [01_getting_started/01_QuickStart.ipynb](01_QuickStart.ipynb) tutorial in the left panel.
 
 
 ## Running the tutorials at NERSC
