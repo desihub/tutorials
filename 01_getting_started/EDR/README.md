@@ -1,6 +1,10 @@
 # Getting Started
 
-Welcome to the DESI Getting Started tutorials!
+Welcome to the DESI EDR Getting Started tutorials!
+
+**NOTE**: These tutorials are provided as a reference for what was released with the DESI Early Data Release,
+but we recommend that any new users start with [Data Release 1](../README.md) which has both better
+data and updated tutorials.
 
 In addition to tutorial Jupyter Notebooks, this folder includes the following:
 - [Instructions for installing DESI Jupyter kernels at NERSC](installing_EDR_kernels_at_NERSC.md)
