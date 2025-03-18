@@ -19,23 +19,23 @@ with a set of 3rd party libraries, plus some DESI code and example data.
 3. Install the DESI-specific packages
 
     ```
-    pip install git+https://github.com/desihub/desiutil@main
-    pip install git+https://github.com/desihub/desitarget@main
-    pip install git+https://github.com/desihub/desispec@main
-    pip install git+https://github.com/desihub/desimodel@main
+    pip install git+https://github.com/desihub/desiutil@3.5.0
+    pip install git+https://github.com/desihub/desitarget@2.9.0
+    pip install git+https://github.com/desihub/desispec@0.69.0
+    pip install git+https://github.com/desihub/desimodel@0.19.3
     install_desimodel_data
-    pip install git+https://github.com/desihub/redrock@main
-    install_rerock_templates
+    pip install git+https://github.com/desihub/redrock@0.20.4
+    install_redrock_templates
     ```
-    **TODO**: update those to a new set of tags.
 
-    **NOTE**: if you previously ran those commands and want to update to the latest version of main,
-    use `pip install --force-reinstall ...`
+    **NOTE**: To get the absolute latest versions, you can replace those tag X.Y.Z numbers
+    with "main".  If you previously installed main and want to update it again,
+    use `pip install --force-reinstall ...`.
 
 4. Download example DESI data
 
     ```
-    curl https://raw.githubusercontent.com/desihub/desida/refs/heads/main/bin/desi_get_dr_subset > desi_get_dr_subset
+    curl https://raw.githubusercontent.com/desihub/desida/refs/tags/1.0.0/bin/desi_get_dr_subset > desi_get_dr_subset
     python desi_get_dr_subset
     ```
 
@@ -58,7 +58,6 @@ with a set of 3rd party libraries, plus some DESI code and example data.
     ```
     git clone https://github.com/desihub/tutorials
     cd tutorials
-    git checkout dr1   # TODO: not needed after DR1 becomes public
     jupyter lab .
     ```
 
@@ -72,35 +71,37 @@ with a set of 3rd party libraries, plus some DESI code and example data.
 ## Running the tutorials at NERSC
 
 If you have access to [NERSC](https://nersc.gov), e.g. through DESI, DES, LSST-DESC, CMB-S4, etc.,
-you can run the tutorials at https://juypter.nersc.gov and have access to the full public DESI data.
+you can run the tutorials at https://juypter.nersc.gov and have access to the full public DESI data
+without having to copy or download anything.
 To do this, you will need to install a "Jupyter kernel" that tells it where to find the pre-installed
-DESI code.
+DESI code and data.
 
 1. Log into perlmutter.nersc.gov and install Jupyter kernel with DESI packages configured for DR1:
 
     ```
     ssh perlmutter.nersc.gov
-    /global/common/software/desi/install_jupyter_kernel --software-version 24.11 --data-release dr1
+    /global/common/software/desi/install_jupyter_kernel --software-version 25.3 --data-release dr1
     ```
 
 2. Get a copy of these tutorials
     ```
     git clone https://github.com/desihub/tutorials
-    cd tutorials
-    git checkout dr1
     ```
-    **TODO**: those last two lines will not be necessary once DR1 is public
 
 3. Login to https://jupyter.nersc.gov, start a "Perlmutter Login Node" server,
    and navigate to the location where you cloned the tutorials.
 
 4. Start with [01_getting_started/01_QuickStart.ipynb](01_QuickStart.ipynb).
    For each tutorial, Kernel -> Change Kernel... (or click on the kernel name
-   in the upper right) and change the kernel to the "DESI 24.11 DR1" kernel
+   in the upper right) and change the kernel to the "DESI 25.3 DR1" kernel
    that you installed in step 1.
 
 **NOTE**: If you get an `ModuleNotFoundError` or `ImportError` when running these
 tutorials, you probably forgot to switch to a DESI kernel first.
 In that case, switch kernels and restart the notebook from the beginning.
+
+**NOTE**: at NERSC you do *not* need to get a copy of the data since that is already there.
+The Jupyter kernel will set `$DESI_ROOT` to the DR1 location, and the tutorials will find
+it from there.
 
 
