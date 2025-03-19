@@ -48,6 +48,12 @@ with a set of 3rd party libraries, plus some DESI code and example data.
     (needed for [03_DataOrganization.ipynb](03_DataOrganization.ipynb) and [05_Spectra.ipynb](05_Spectra.ipynb)
     but not the others)
 
+    **NOTE**: Most of these tutorials require downloading example files.
+    The [06_PublicDatabaseAccess.ipynb](06_PublicDatabaseAccess.ipynb) tutorial demonstrates
+    an alternative method of accessing the data through public database queries and
+    downloading spectra on-the-fly using
+    [SPARCL](https://astrosparcl.datalab.noirlab.edu), without needing any local data.
+
 5. Set `$DESI_ROOT` to the path where you just downloaded the data
 
     * bash: `export DESI_ROOT=$PWD/tiny_dr1`
