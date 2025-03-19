@@ -1,6 +1,8 @@
 # README
 
-This database folder includes the following tutorial notebooks.
+This database folder includes the following tutorial notebooks, which require NERSC access.
+
+For publicly accessible databases, please refer to the tutorial [01_getting_started/06_PublicDatabaseAccess.ipynb](../01_getting_started/06_PublicDatabaseAccess.ipynb). However, the functionality and examples contained in the notebooks listed below can still be informative and adapted to work with the public databases.
 
 ## How_to_use_SPARCL_at_NERSC.ipynb
 

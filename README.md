@@ -26,11 +26,11 @@ Tutorials hosted in other packages include (but haven't been recently vetted):
 The NOIRLab Astro Data Lab serves a copy of the DESI DR1 and EDR databases as `desi_dr1` and `desi_edr`.
 These are accessible to users without a NERSC account. 
 Various modes of data access are described [here](https://datalab.noirlab.edu/desi/access.php). 
-In particular, there is a Table Access Protocol (TAP) handle that provides a convenient access layer for the 
+For public access, there is a Table Access Protocol (TAP) handle that provides a convenient access layer for the 
 DESI catalog database tables. TAP-aware clients (such as TOPCAT) can point to `https://datalab.noirlab.edu/tap`, 
 select the `desi_dr1` database, and see the database tables and descriptions. 
 
-Descriptions of the associated tables can also be found in the Data Lab [table browser](https://datalab.noirlab.edu/query.php?name=desi_edr.zpix) 
+Descriptions of the associated tables can also be found in the Data Lab [table browser](https://datalab.noirlab.edu/query.php?name=desi_dr1.zpix) 
 and on the DESI Data Documentation [Database page](https://data.desi.lbl.gov/doc/access/database/). 
 
 ## SPARCL
